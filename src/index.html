@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <title>Safetyhub Dashboard</title>
+  </head>
+  <body>
+    <main class="max-w-screen bg-[#f4f7f8]">
+      <section class="flex">
+        <nav
+          class="w-16 p-4 bg-[#1e335d] text-white min-h-screen lg:w-[250px] lg:p-8"
+        >
+          <div class="flex flex-col space-y-6">
+            <!-- logo -->
+            <div id="logo" class="">
+              <img
+                src="../img/svg/safetyhub-logo-primary-mono-inverse.svg"
+                class="hidden lg:block"
+                alt=""
+              />
+              <img src="../img/logo.jpg" class="w-10 block lg:hidden" alt="" />
+            </div>
+
+            <div class="group flex items-center space-x-4 hover:cursor-pointer ">
+              <div>
+                <img src="../img/icons/monitor.png" class="w-8 h-8" alt="" />
+              </div>
+              <div class="hidden lg:flex-row lg:block">Dashboard</div>
+            </div>
+            <div class="flex items-center space-x-4 hover:cursor-pointer">
+              <div>
+                <img
+                  src="../img/icons/videoLibrary.png"
+                  class="w-8 h-8"
+                  alt=""
+                />
+              </div>
+              <div class="hidden lg:flex-row lg:block">Video Library</div>
+            </div>
+            <div class="flex items-center space-x-4 hover:cursor-pointer">
+              <div>
+                <img src="../img/icons/training.png" class="w-10 h-10" alt="" />
+              </div>
+              <div class="hidden lg:flex-row lg:block">
+                Training assigned to me
+              </div>
+            </div>
+            <div class="flex items-center space-x-4 hover:cursor-pointer">
+              <div>
+                <img src="../img/icons/courses.png" class="w-8 h-8" alt="" />
+              </div>
+              <div class="hidden lg:flex-row lg:block">Courses</div>
+            </div>
+            <div class="flex items-center space-x-4 hover:cursor-pointer">
+              <div>
+                <img src="../img/icons/Bundles.png" class="w-8 h-8" alt="" />
+              </div>
+              <div class="hidden lg:flex-row lg:block">Course Bundles</div>
+            </div>
+            <div class="flex items-center space-x-4 hover:cursor-pointer">
+              <div>
+                <img src="../img/icons/user.png" class="w-8 h-8" alt="" />
+              </div>
+              <div class="hidden lg:flex-row lg:block">Enrolments</div>
+            </div>
+            <div class="flex items-center space-x-4 hover:cursor-pointer">
+              <div>
+                <img
+                  src="../img/icons/participants.png"
+                  class="w-8 h-8"
+                  alt=""
+                />
+              </div>
+              <div class="hidden lg:flex-row lg:block">Participants</div>
+            </div>
+            <div class="flex items-center space-x-4 hover:cursor-pointer">
+              <div>
+                <img
+                  src="../img/icons/certificates.png"
+                  class="w-8 h-8"
+                  alt=""
+                />
+              </div>
+              <div class="hidden lg:flex-row lg:block">Certificates</div>
+            </div>
+            <div class="flex items-center space-x-4 hover:cursor-pointer">
+              <div>
+                <img
+                  src="../img/icons/Departments.png"
+                  class="w-8 h-8"
+                  alt=""
+                />
+              </div>
+              <div class="hidden lg:flex-row lg:block">Departments</div>
+            </div>
+            <div class="flex items-center space-x-4 hover:cursor-pointer">
+              <div>
+                <img src="../img/icons/groups.png" class="w-8 h-8" alt="" />
+              </div>
+              <div class="hidden lg:flex-row lg:block">Groups</div>
+            </div>
+            <div class="flex items-center space-x-4 hover:cursor-pointer">
+              <div>
+                <img
+                  src="../img/icons/trainingReports.png"
+                  class="w-8 h-8"
+                  alt=""
+                />
+              </div>
+              <div class="hidden lg:flex-row lg:block">Training reports</div>
+            </div>
+            <div class="flex items-center space-x-4 hover:cursor-pointer">
+              <div>
+                <img
+                  src="../img/icons/participantsReports.png"
+                  class="w-8 h-8"
+                  alt=""
+                />
+              </div>
+              <div class="hidden lg:flex-row lg:block">Participant reports</div>
+            </div>
+            <div class="flex items-center space-x-4 hover:cursor-pointer">
+              <div>
+                <img
+                  src="../img/icons/myUploadedVideos.png"
+                  class="w-8 h-8"
+                  alt=""
+                />
+              </div>
+              <div class="hidden lg:flex-row lg:block">My uploaded videos</div>
+            </div>
+            <div class="flex items-center space-x-4 hover:cursor-pointer">
+              <div>
+                <img src="../img/icons/settings.png" class="w-8 h-8" alt="" />
+              </div>
+              <div class="hidden lg:flex-row lg:block">
+                Organisation Settings
+              </div>
+            </div>
+            <div class="flex items-center space-x-4 hover:cursor-pointer">
+              <div>
+                <img src="../img/icons/tasks.png" class="w-8 h-8" alt="" />
+              </div>
+              <div class="hidden lg:flex-row lg:block">Tasks</div>
+            </div>
+            <div class="flex items-center space-x-4 hover:cursor-pointer">
+              <div>
+                <img
+                  src="../img/icons/organisations.png"
+                  class="w-8 h-8"
+                  alt=""
+                />
+              </div>
+              <div class="hidden lg:flex-row lg:block">Organisations</div>
+            </div>
+            <div class="flex items-center space-x-4 hover:cursor-pointer">
+              <div>
+                <img src="../img/icons/libraries.png" class="w-8 h-8" alt="" />
+              </div>
+              <div class="hidden lg:flex-row lg:block">Libraries</div>
+            </div>
+            <div class="flex items-center space-x-4 hover:cursor-pointer">
+              <div>
+                <img src="../img/icons/plans.png" class="w-8 h-8" alt="" />
+              </div>
+              <div class="hidden lg:flex-row lg:block">Plans</div>
+            </div>
+            <div class="flex items-center space-x-4 hover:cursor-pointer">
+              <div>
+                <img src="../img/icons/reports.png" class="w-8 h-8" alt="" />
+              </div>
+              <div class="hidden lg:flex-row lg:block">Reports</div>
+            </div>
+            <div class="flex items-center space-x-4 hover:cursor-pointer">
+              <div>
+                <img
+                  src="../img/icons/settings (1).png"
+                  class="w-8 h-8"
+                  alt=""
+                />
+              </div>
+              <div class="hidden lg:flex-row lg:block">Settings</div>
+            </div>
+            <div class="flex items-center space-x-4 hover:cursor-pointer">
+              <div>
+                <img src="../img/icons/email.png" class="w-8 h-8" alt="" />
+              </div>
+              <div class="hidden lg:flex-row lg:block">Emails</div>
+            </div>
+            <div class="flex items-center space-x-4 hover:cursor-pointer">
+              <div>
+                <img src="../img/icons/preview.png" class="w-8 h-8" alt="" />
+              </div>
+              <div class="hidden lg:flex-row lg:block">Preview</div>
+            </div>
+            <div class="flex items-center space-x-4 hover:cursor-pointer">
+              <div>
+                <img src="../img/icons/theme.png" class="w-8 h-8" alt="" />
+              </div>
+              <div class="hidden lg:flex-row lg:block">Theme</div>
+            </div>
+            <div class="flex items-center space-x-4 hover:cursor-pointer">
+              <div>
+                <img src="../img/icons/signout.png" class="w-8 h-8" alt="" />
+              </div>
+              <div class="hidden lg:flex-row lg:block">Signout</div>
+            </div>
+          </div>
+        </nav>
+        <section class="m-4 p-4 bg-[#f4f7f8]">
+          <p class="text-xs mb-2 text-gray-500 uppercase">
+            <strong>home</strong> / dashboard
+          </p>
+          <h2 class="text-4xl font-bold text-[#112B4AD6]">Dashboard</h2>
+
+          <div class="mt-6 max-w-lg">
+            <div class="grid grid-cols-1 gap-4 md:grid-cols-2 ">
+              <div
+                class="p-4 w-[250px] flex items-center justify-around bg-white shadow-lg rounded-xl"
+              >
+                <div class="flex flex-col space-y-2">
+                  <p class="text-[#1e335d] text-2xl font-bold">1,504</p>
+                  <p class="text-xs text-gray-500">Daily Views</p>
+                </div>
+                <div>
+                  <img src="../img/icons/view.png" class="w-10" alt="" />
+                </div>
+              </div>
+
+              <div
+                class="p-4 w-[250px] flex items-center justify-around bg-white shadow-lg rounded-xl"
+              >
+                <div class="flex flex-col space-y-2">
+                  <p class="text-[#1e335d] text-2xl font-bold">$9500</p>
+                  <p class="text-xs text-gray-500">New sales: $6000</p>
+                  <p class="text-xs text-gray-500">Renewals: $3500</p>
+                </div>
+                <div>
+                  <img
+                    src="../img/icons/shopping-cart.png"
+                    class="w-10"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Data tables -->
+          <div class="mt-8 grid gap-6 grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
+            
+            <div class="w-80 flex flex-col bg-white border-2 rounded-lg lg:w-96 ">
+              <div class="border-b-2 p-4">
+                <p class="text-[#112B4AD6] text-lg font-bold">Renewals Due</p>
+              </div>
+              <div class="flex justify-between border-b-2 p-4">
+                <p class="text-[#112B4A] capitalize">Grant-Kavacek</p>
+                <p>18 May</p>
+              </div>
+              <div class="flex justify-between border-b-2 p-4">
+                <p class="text-[#112B4A] capitalize">Breitenberg-Crooks</p>
+                <p ">28 May</p>
+              </div>
+              <div class="flex justify-between border-b-2 p-4">
+               
+                    <p class="text-sm ">Franecki, Dubuque and Huel</p>
+                    <p>30 May</p>
+              </div>
+              <div class="flex justify-between border-b-2 p-4">
+                <p class="text-[#112B4A]  capitalize">Baumbach-Hansen</p>
+                <p>08 Jun</p>
+              </div>
+              <div class="flex justify-between border-b-2 p-4">
+                <p class="text-[#112B4A]  capitalize">Welch LLC</p>
+                <p>08 Jun</p>
+              </div>
+            </div>
+
+            <div class="w-80 flex flex-col bg-white border-2 rounded-lg lg:w-96 ">
+              <div class="border-b-2 p-4">
+                <p class="text-[#112B4AD6] text-lg font-bold">Debtors</p>
+              </div>
+              <div class="flex justify-between border-b-2 p-4">
+                <p class="text-[#112B4A] capitalize">Corwin-Hauck</p>
+                <p>20 May</p>
+              </div>
+              <div class="flex justify-between border-b-2 p-4">
+                <p class="text-[#112B4A] capitalize">Franecki, DuBuque and Huel</p>
+                <p ">20 May</p>
+              </div>
+              <div class="flex justify-between border-b-2 p-4">
+               
+                    <p class="text-sm ">Towne LLC</p>
+                    <p>01 Jun</p>
+              </div>
+              <div class="flex justify-between border-b-2 p-4">
+                <p class="text-[#112B4A]  capitalize">Goodwin, Brekke and Becker</p>
+                <p>01 Jun</p>
+              </div>
+              <div class="flex justify-between border-b-2 p-4">
+                <p class="text-[#112B4A]  capitalize">Hettinger-Keebler</p>
+                <p>11 Jun</p>
+              </div>
+            </div>
+
+            <div class="w-80 flex flex-col bg-white border-2 rounded-lg lg:w-96 ">
+              <div class="border-b-2 p-4">
+                <p class="text-[#112B4AD6] text-lg font-bold">Trial Views</p>
+              </div>
+              <div class="flex justify-between border-b-2 p-4">
+                <p class="text-[#112B4A] capitalize">Hettinger-Keebler</p>
+                <p>20 May</p>
+              </div>
+              <div class="flex justify-between border-b-2 p-4">
+                <p class="text-[#112B4A] capitalize">Safetycare Pty LTD</p>
+                <p ">24 May</p>
+              </div>
+              <div class="flex justify-between border-b-2 p-4">
+               
+                    <p class="text-sm ">Safetycare CA Test</p>
+                    <p>28 May</p>
+              </div>
+              <div class="flex justify-between border-b-2 p-4">
+                <p class="text-[#112B4A]  capitalize">McDermott-Bauch</p>
+                <p>28 May</p>
+              </div>
+              <div class="flex justify-between border-b-2 p-4">
+                <p class="text-[#112B4A]  capitalize">Goldner, Donnelly and smith</p>
+                <p>01 Jun</p>
+              </div>
+            </div>
+
+            <div class="w-80 flex flex-col bg-white border-2 rounded-lg lg:w-96 ">
+              <div class="border-b-2 p-4">
+                <p class="text-[#112B4AD6] text-lg font-bold">Trials Expiring</p>
+              </div>
+              <div class="flex justify-between border-b-2 p-4">
+                <p class="text-[#112B4A] capitalize">Reinger Group</p>
+                <p>23 May</p>
+              </div>
+              <div class="flex justify-between border-b-2 p-4">
+                <p class="text-[#112B4A] capitalize">Murray-Tillman</p>
+                <p ">24 May</p>
+              </div>
+              <div class="flex justify-between border-b-2 p-4">
+               
+                    <p class="text-sm ">Koch, Buckridge and Mante</p>
+                    <p>01 Jun</p>
+              </div>
+              <div class="flex justify-between border-b-2 p-4">
+                <p class="text-[#112B4A]  capitalize">FKling-McCullough</p>
+                <p>04 Jun</p>
+              </div>
+              <div class="flex justify-between border-b-2 p-4">
+                <p class="text-[#112B4A]  capitalize">Keebler Group</p>
+                <p>08 Jun</p>
+              </div>
+            </div>
+
+            <div class="w-80 flex flex-col bg-white border-2 rounded-lg lg:w-96 ">
+              <div class="border-b-2 p-4">
+                <p class="text-[#112B4AD6] text-lg font-bold">Customer Usage</p>
+              </div>
+              <div class="flex justify-between border-b-2 p-4">
+                <p class="text-[#112B4A] capitalize">Acme Corporation</p>
+                <p>17 May</p>
+              </div>
+              <div class="flex justify-between border-b-2 p-4">
+                <p class="text-[#112B4A] capitalize">Corkery-Bradtke</p>
+                <p ">22 May</p>
+              </div>
+              <div class="flex justify-between border-b-2 p-4">
+               
+                    <p class="text-sm ">Franecki, Dubuque and Huel</p>
+                    <p>29 May</p>
+              </div>
+              <div class="flex justify-between border-b-2 p-4">
+                <p class="text-[#112B4A]  capitalize">Nalan and Sans</p>
+                <p>01 Jun</p>
+              </div>
+              <div class="flex justify-between border-b-2 p-4">
+                <p class="text-[#112B4A]  capitalize">Safetycare US Test</p>
+                <p>13 Jun</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tasks -->
+          <div class="w-80 mt-8 bg-white border-2 md:w-[75%] lg:w-[75%] xl:w-[75%]">
+            <div class=" flex justify-between py-[0.75rem] px-[1.25rem] border-b-2 ">
+                <div class="flex items-center max-w-lg space-x-2 ">
+                    <img src="../img/icons/check.png" class="w-5 h-5" alt="">
+                    <p class="text-sm  text-[#495057]">Setup Trial for AAA Safetycare Sample Co due on 01 Mar 2023</p>
+                </div>
+                <div class="flex items-center space-x-2 ">
+                    <div class="text-[#5DD2BC] py-[0.25rem] px-[0.25rem] inline-block border-2 border-[#5DD2BC]">Request</div>
+                    <p class="text-[#495057]">20 Jul</p>
+                </div>
+            </div>
+            <div class=" flex justify-between py-[0.75rem] px-[1.25rem] border-b-2 ">
+                <div class="flex items-center space-x-2 ">
+                    <img src="../img/icons/check.png" class="w-5 h-5" alt="">
+                    <p class="text-sm text-[#495057]">Add content on lessons</p>
+                </div>
+                <div class="flex items-center space-x-2 ">
+                    <div class="text-[#5DD2BC] py-[0.25rem] px-[0.25rem] inline-block border-2 border-[#5DD2BC]">Request</div>
+                    <p class="text-[#495057]">20 Jul</p>
+                </div>
+            </div>
+            <div class=" flex justify-between py-[0.75rem] px-[1.25rem] border-b-2 ">
+                <div class="flex items-center space-x-2 ">
+                    <img src="../img/icons/check.png" class="w-5 h-5" alt="">
+                    <p class="text-sm text-[#495057]">Add content on lessons</p>
+                </div>
+                <div class="flex items-center space-x-2 ">
+                    <div class="text-[#5DD2BC] py-[0.25rem] px-[0.25rem] inline-block border-2 border-[#5DD2BC]">Request</div>
+                    <p class="text-[#495057]">20 Jul</p>
+                </div>
+            </div>
+            <div class=" flex justify-between py-[0.75rem] px-[1.25rem] border-b-2 ">
+                <div class="flex items-center space-x-2 ">
+                    <img src="../img/icons/check.png" class="w-5 h-5" alt="">
+                    <p class="text-sm text-[#495057]">Add content on lessons</p>
+                </div>
+                <div class="flex items-center space-x-2 ">
+                    <div class="text-[#5DD2BC] py-[0.25rem] px-[0.25rem] inline-block border-2 border-[#5DD2BC]">Request</div>
+                    <p class="text-[#495057]">20 Jul</p>
+                </div>
+            </div>
+            <div class=" flex justify-between py-[0.75rem] px-[1.25rem] border-b-2 ">
+                <div class="flex items-center space-x-2 ">
+                    <img src="../img/icons/check.png" class="w-5 h-5" alt="">
+                    <p class="text-sm text-[#495057]">Add content on lessons</p>
+                </div>
+                <div class="flex items-center space-x-2 ">
+                    <div class="text-[#5DD2BC] py-[0.25rem] px-[0.25rem] inline-block border-2 border-[#5DD2BC]">Request</div>
+                    <p class="text-[#495057]">20 Jul</p>
+                </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
