@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <title>Courses</title>
+  </head>
+  <body class="bg-[#f3f8f9]">
+    <main
+      class="flex flex-col space-y-6 g:space-y-0 lg:flex-row space-x-6 max-w-screen min-h-screen"
+    >
+      <!-- left -->
+      <section class="flex flex-col space-y-4 md:space-y-0">
+        <div
+          class="flex mx-6 my-4 py-3 space-x-6 justify-center items-center bg-[#384F95] text-white font-bold rounded-lg whitespace-nowrap sm:px-36 md:px-64 lg:px-8 xl:hidden"
+        >
+          <!--   -->
+          <!--  -->
+          <!-- Hamburger Button -->
+          <div class="mt-2">
+            <button
+              id="menu-btn"
+              type="button"
+              class="z-40 block hamburger focus:outline-none"
+            >
+              <span class="hamburger-top"></span>
+              <span class="hamburger-middle"></span>
+              <span class="hamburger-bottom"></span>
+            </button>
+          </div>
+          <p class="text-lg">Dashboard menu</p>
+        </div>
+        <div class="hidden lg:block">
+          <nav
+            class="w-16 p-4 bg-[#1e335d] text-white min-h-screen lg:w-[250px] lg:p-8"
+          >
+            <div class="flex flex-col space-y-6">
+              <!-- logo -->
+              <div id="logo" class="">
+                <img
+                  src="../img/svg/safetyhub-logo-primary-mono-inverse.svg"
+                  class="hidden lg:block"
+                  alt=""
+                />
+                <img
+                  src="../img/logo.jpg"
+                  class="w-10 block lg:hidden"
+                  alt=""
+                />
+              </div>
+
+              <div
+                class="group flex items-center space-x-4 hover:cursor-pointer"
+              >
+                <div>
+                  <img src="../img/icons/monitor.png" class="w-8 h-8" alt="" />
+                </div>
+                <div class="hidden lg:flex-row lg:block">Dashboard</div>
+              </div>
+              <div class="flex items-center space-x-4 hover:cursor-pointer">
+                <div>
+                  <img
+                    src="../img/icons/videoLibrary.png"
+                    class="w-8 h-8"
+                    alt=""
+                  />
+                </div>
+                <div class="hidden lg:flex-row lg:block">Video Library</div>
+              </div>
+              <div class="flex items-center space-x-4 hover:cursor-pointer">
+                <div>
+                  <img
+                    src="../img/icons/training.png"
+                    class="w-10 h-10"
+                    alt=""
+                  />
+                </div>
+                <div class="hidden lg:flex-row lg:block">
+                  Training assigned to me
+                </div>
+              </div>
+              <div class="flex items-center space-x-4 hover:cursor-pointer">
+                <div>
+                  <img src="../img/icons/courses.png" class="w-8 h-8" alt="" />
+                </div>
+                <div class="hidden lg:flex-row lg:block">Courses</div>
+              </div>
+              <div class="flex items-center space-x-4 hover:cursor-pointer">
+                <div>
+                  <img src="../img/icons/Bundles.png" class="w-8 h-8" alt="" />
+                </div>
+                <div class="hidden lg:flex-row lg:block">Course Bundles</div>
+              </div>
+              <div class="flex items-center space-x-4 hover:cursor-pointer">
+                <div>
+                  <img src="../img/icons/user.png" class="w-8 h-8" alt="" />
+                </div>
+                <div class="hidden lg:flex-row lg:block">Enrolments</div>
+              </div>
+              <div class="flex items-center space-x-4 hover:cursor-pointer">
+                <div>
+                  <img
+                    src="../img/icons/participants.png"
+                    class="w-8 h-8"
+                    alt=""
+                  />
+                </div>
+                <div class="hidden lg:flex-row lg:block">Participants</div>
+              </div>
+              <div class="flex items-center space-x-4 hover:cursor-pointer">
+                <div>
+                  <img
+                    src="../img/icons/certificates.png"
+                    class="w-8 h-8"
+                    alt=""
+                  />
+                </div>
+                <div class="hidden lg:flex-row lg:block">Certificates</div>
+              </div>
+              <div class="flex items-center space-x-4 hover:cursor-pointer">
+                <div>
+                  <img
+                    src="../img/icons/Departments.png"
+                    class="w-8 h-8"
+                    alt=""
+                  />
+                </div>
+                <div class="hidden lg:flex-row lg:block">Departments</div>
+              </div>
+              <div class="flex items-center space-x-4 hover:cursor-pointer">
+                <div>
+                  <img src="../img/icons/groups.png" class="w-8 h-8" alt="" />
+                </div>
+                <div class="hidden lg:flex-row lg:block">Groups</div>
+              </div>
+              <div class="flex items-center space-x-4 hover:cursor-pointer">
+                <div>
+                  <img
+                    src="../img/icons/trainingReports.png"
+                    class="w-8 h-8"
+                    alt=""
+                  />
+                </div>
+                <div class="hidden lg:flex-row lg:block">Training reports</div>
+              </div>
+              <div class="flex items-center space-x-4 hover:cursor-pointer">
+                <div>
+                  <img
+                    src="../img/icons/participantsReports.png"
+                    class="w-8 h-8"
+                    alt=""
+                  />
+                </div>
+                <div class="hidden lg:flex-row lg:block">
+                  Participant reports
+                </div>
+              </div>
+              <div class="flex items-center space-x-4 hover:cursor-pointer">
+                <div>
+                  <img
+                    src="../img/icons/myUploadedVideos.png"
+                    class="w-8 h-8"
+                    alt=""
+                  />
+                </div>
+                <div class="hidden lg:flex-row lg:block">
+                  My uploaded videos
+                </div>
+              </div>
+              <div class="flex items-center space-x-4 hover:cursor-pointer">
+                <div>
+                  <img src="../img/icons/settings.png" class="w-8 h-8" alt="" />
+                </div>
+                <div class="hidden lg:flex-row lg:block">
+                  Organisation Settings
+                </div>
+              </div>
+              <div class="flex items-center space-x-4 hover:cursor-pointer">
+                <div>
+                  <img src="../img/icons/tasks.png" class="w-8 h-8" alt="" />
+                </div>
+                <div class="hidden lg:flex-row lg:block">Tasks</div>
+              </div>
+              <div class="flex items-center space-x-4 hover:cursor-pointer">
+                <div>
+                  <img
+                    src="../img/icons/organisations.png"
+                    class="w-8 h-8"
+                    alt=""
+                  />
+                </div>
+                <div class="hidden lg:flex-row lg:block">Organisations</div>
+              </div>
+              <div class="flex items-center space-x-4 hover:cursor-pointer">
+                <div>
+                  <img
+                    src="../img/icons/libraries.png"
+                    class="w-8 h-8"
+                    alt=""
+                  />
+                </div>
+                <div class="hidden lg:flex-row lg:block">Libraries</div>
+              </div>
+              <div class="flex items-center space-x-4 hover:cursor-pointer">
+                <div>
+                  <img src="../img/icons/plans.png" class="w-8 h-8" alt="" />
+                </div>
+                <div class="hidden lg:flex-row lg:block">Plans</div>
+              </div>
+              <div class="flex items-center space-x-4 hover:cursor-pointer">
+                <div>
+                  <img src="../img/icons/reports.png" class="w-8 h-8" alt="" />
+                </div>
+                <div class="hidden lg:flex-row lg:block">Reports</div>
+              </div>
+              <div class="flex items-center space-x-4 hover:cursor-pointer">
+                <div>
+                  <img
+                    src="../img/icons/settings (1).png"
+                    class="w-8 h-8"
+                    alt=""
+                  />
+                </div>
+                <div class="hidden lg:flex-row lg:block">Settings</div>
+              </div>
+              <div class="flex items-center space-x-4 hover:cursor-pointer">
+                <div>
+                  <img src="../img/icons/email.png" class="w-8 h-8" alt="" />
+                </div>
+                <div class="hidden lg:flex-row lg:block">Emails</div>
+              </div>
+              <div class="flex items-center space-x-4 hover:cursor-pointer">
+                <div>
+                  <img src="../img/icons/preview.png" class="w-8 h-8" alt="" />
+                </div>
+                <div class="hidden lg:flex-row lg:block">Preview</div>
+              </div>
+              <div class="flex items-center space-x-4 hover:cursor-pointer">
+                <div>
+                  <img src="../img/icons/theme.png" class="w-8 h-8" alt="" />
+                </div>
+                <div class="hidden lg:flex-row lg:block">Theme</div>
+              </div>
+              <div class="flex items-center space-x-4 hover:cursor-pointer">
+                <div>
+                  <img src="../img/icons/signout.png" class="w-8 h-8" alt="" />
+                </div>
+                <div class="hidden lg:flex-row lg:block">Signout</div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </section>
+      <!-- right -->
+      <section class="flex pr-10 flex-col space-y-6 w-full">
+        <h2 class="text-[#566985] text-3xl font-bold capitalize">
+          Your Listings
+        </h2>
+
+        <!--  -->
+        <div class="relative flex pt-4 pb-6 pl-4 pr-6 bg-white rounded-lg">
+          <div
+            class="flex flex-col space-y-4 lg:space-y-0 lg:flex-row lg:space-x-6"
+          >
+            <div class="rounded-lg w-full lg:w-28">
+              <img src="../img/1.jpg" class="rounded-lg" alt="" />
+            </div>
+            <div>
+              <p class="text-[#566985] font-bold">Luxary Restaurant</p>
+              <p class="text-[#7D93B2] max-w-lg">
+                40 Journal Square Plaza, NJ, USA
+              </p>
+            </div>
+          </div>
+          <div class="absolute right-0 rounded-l-full bg-[#F9F9F9] p-4">
+            <div class="flex space-x-4">
+              <div class="p-4 bg-[#4DB7FE] rounded-full">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10"
+                  />
+                </svg>
+              </div>
+              <div class="p-4 bg-[#F75C96] rounded-full">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--  -->
+        <div class="relative flex pt-4 pb-6 pl-4 pr-6 bg-white rounded-lg">
+          <div
+            class="flex flex-col space-y-4 lg:space-y-0 lg:flex-row lg:space-x-6"
+          >
+            <div class="rounded-lg w-full lg:w-28">
+              <img src="../img/2.jpg" class="rounded-lg" alt="" />
+            </div>
+            <div>
+              <p class="text-[#566985] font-bold">Luxary Restaurant</p>
+              <p class="text-[#7D93B2] max-w-lg">
+                40 Journal Square Plaza, NJ, USA
+              </p>
+            </div>
+          </div>
+          <div class="absolute right-0 rounded-l-full bg-[#F9F9F9] p-4">
+            <div class="flex space-x-4">
+              <div class="p-4 bg-[#4DB7FE] rounded-full">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10"
+                  />
+                </svg>
+              </div>
+              <div class="p-4 bg-[#F75C96] rounded-full">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="relative flex pt-4 pb-6 pl-4 pr-6 bg-white rounded-lg">
+          <div
+            class="flex flex-col space-y-4 lg:space-y-0 lg:flex-row lg:space-x-6"
+          >
+            <div class="rounded-lg w-full lg:w-28">
+              <img src="../img/3.jpg" class="rounded-lg" alt="" />
+            </div>
+            <div>
+              <p class="text-[#566985] font-bold">Luxary Restaurant</p>
+              <p class="text-[#7D93B2] max-w-lg">
+                40 Journal Square Plaza, NJ, USA
+              </p>
+            </div>
+          </div>
+          <div class="absolute right-0 rounded-l-full bg-[#F9F9F9] p-4">
+            <div class="flex space-x-4">
+              <div class="p-4 bg-[#4DB7FE] rounded-full">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10"
+                  />
+                </svg>
+              </div>
+              <div class="p-4 bg-[#F75C96] rounded-full">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="relative flex pt-4 pb-6 pl-4 pr-6 bg-white rounded-lg">
+          <div
+            class="flex flex-col space-y-4 lg:space-y-0 lg:flex-row lg:space-x-6"
+          >
+            <div class="rounded-lg w-full lg:w-28">
+              <img src="../img/11.jpg" class="rounded-lg" alt="" />
+            </div>
+            <div>
+              <p class="text-[#566985] font-bold">Luxary Restaurant</p>
+              <p class="text-[#7D93B2] max-w-lg">
+                40 Journal Square Plaza, NJ, USA
+              </p>
+            </div>
+          </div>
+          <div class="absolute right-0 rounded-l-full bg-[#F9F9F9] p-4">
+            <div class="flex space-x-4">
+              <div class="p-4 bg-[#4DB7FE] rounded-full">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10"
+                  />
+                </svg>
+              </div>
+              <div class="p-4 bg-[#F75C96] rounded-full">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="relative flex pt-4 pb-6 pl-4 pr-6 bg-white rounded-lg">
+          <div
+            class="flex flex-col space-y-4 lg:space-y-0 lg:flex-row lg:space-x-6"
+          >
+            <div class="rounded-lg w-full lg:w-28">
+              <img src="../img/5.jpg" class="rounded-lg" alt="" />
+            </div>
+            <div>
+              <p class="text-[#566985] font-bold">Luxary Restaurant</p>
+              <p class="text-[#7D93B2] max-w-lg">
+                40 Journal Square Plaza, NJ, USA
+              </p>
+            </div>
+          </div>
+          <div class="absolute right-0 rounded-l-full bg-[#F9F9F9] p-4">
+            <div class="flex space-x-4">
+              <div class="p-4 bg-[#4DB7FE] rounded-full">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10"
+                  />
+                </svg>
+              </div>
+              <div class="p-4 bg-[#F75C96] rounded-full">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="relative flex pt-4 pb-6 pl-4 pr-6 bg-white rounded-lg">
+          <div
+            class="flex flex-col space-y-4 lg:space-y-0 lg:flex-row lg:space-x-6"
+          >
+            <div class="rounded-lg w-full lg:w-28">
+              <img src="../img/6.jpg" class="rounded-lg" alt="" />
+            </div>
+            <div>
+              <p class="text-[#566985] font-bold">Luxary Restaurant</p>
+              <p class="text-[#7D93B2] max-w-lg">
+                40 Journal Square Plaza, NJ, USA
+              </p>
+            </div>
+          </div>
+          <div class="absolute right-0 rounded-l-full bg-[#F9F9F9] p-4">
+            <div class="flex space-x-4">
+              <div class="p-4 bg-[#4DB7FE] rounded-full">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10"
+                  />
+                </svg>
+              </div>
+              <div class="p-4 bg-[#F75C96] rounded-full">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="relative flex pt-4 pb-6 pl-4 pr-6 bg-white rounded-lg">
+          <div
+            class="flex flex-col space-y-4 lg:space-y-0 lg:flex-row lg:space-x-6"
+          >
+            <div class="rounded-lg w-full lg:w-28">
+              <img src="../img/7.jpg" class="rounded-lg" alt="" />
+            </div>
+            <div>
+              <p class="text-[#566985] font-bold">Luxary Restaurant</p>
+              <p class="text-[#7D93B2] max-w-lg">
+                40 Journal Square Plaza, NJ, USA
+              </p>
+            </div>
+          </div>
+          <div class="absolute right-0 rounded-l-full bg-[#F9F9F9] p-4">
+            <div class="flex space-x-4">
+              <div class="p-4 bg-[#4DB7FE] rounded-full">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10"
+                  />
+                </svg>
+              </div>
+              <div class="p-4 bg-[#F75C96] rounded-full">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="relative flex pt-4 pb-6 pl-4 pr-6 bg-white rounded-lg">
+          <div
+            class="flex flex-col space-y-4 lg:space-y-0 lg:flex-row lg:space-x-6"
+          >
+            <div class="rounded-lg w-full lg:w-28">
+              <img src="../img/8.jpg" class="rounded-lg" alt="" />
+            </div>
+            <div>
+              <p class="text-[#566985] font-bold">Luxary Restaurant</p>
+              <p class="text-[#7D93B2] max-w-lg">
+                40 Journal Square Plaza, NJ, USA
+              </p>
+            </div>
+          </div>
+          <div class="absolute right-0 rounded-l-full bg-[#F9F9F9] p-4">
+            <div class="flex space-x-4">
+              <div class="p-4 bg-[#4DB7FE] rounded-full">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10"
+                  />
+                </svg>
+              </div>
+              <div class="p-4 bg-[#F75C96] rounded-full">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="relative flex pt-4 pb-6 pl-4 pr-6 bg-white rounded-lg">
+          <div
+            class="flex flex-col space-y-4 lg:space-y-0 lg:flex-row lg:space-x-6"
+          >
+            <div class="rounded-lg w-full lg:w-28">
+              <img src="../img/9.jpg" class="rounded-lg" alt="" />
+            </div>
+            <div>
+              <p class="text-[#566985] font-bold">Luxary Restaurant</p>
+              <p class="text-[#7D93B2] max-w-lg">
+                40 Journal Square Plaza, NJ, USA
+              </p>
+            </div>
+          </div>
+          <div class="absolute right-0 rounded-l-full bg-[#F9F9F9] p-4">
+            <div class="flex space-x-4">
+              <div class="p-4 bg-[#4DB7FE] rounded-full">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10"
+                  />
+                </svg>
+              </div>
+              <div class="p-4 bg-[#F75C96] rounded-full">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="relative flex pt-4 pb-6 pl-4 pr-6 bg-white rounded-lg">
+          <div
+            class="flex flex-col space-y-4 lg:space-y-0 lg:flex-row lg:space-x-6"
+          >
+            <div class="rounded-lg w-full lg:w-28">
+              <img src="../img/10.jpg" class="rounded-lg" alt="" />
+            </div>
+            <div>
+              <p class="text-[#566985] font-bold">Luxary Restaurant</p>
+              <p class="text-[#7D93B2] max-w-lg">
+                40 Journal Square Plaza, NJ, USA
+              </p>
+            </div>
+          </div>
+          <div class="absolute right-0 rounded-l-full bg-[#F9F9F9] p-4">
+            <div class="flex space-x-4">
+              <div class="p-4 bg-[#4DB7FE] rounded-full">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10"
+                  />
+                </svg>
+              </div>
+              <div class="p-4 bg-[#F75C96] rounded-full">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+
+        <!--  -->
+      </section>
+    </main>
+  </body>
+</html>
