@@ -8,6 +8,19 @@
   box-sizing: border-box;
 }
 
+#hero {
+  background-image: url(../img/bg2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+/* background: linear-gradient(
+  90deg,
+  rgba(2, 0, 36, 1) 0%,
+  rgba(74, 77, 80, 1) 100%,
+  rgba(0, 212, 255, 1) 100%
+); */
+
 /* Hamburger Menu */
 .hamburger {
   cursor: pointer;
