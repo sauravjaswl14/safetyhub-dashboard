@@ -14,8 +14,8 @@
     <title>Safety Hub</title>
   </head>
   <body class="bg-[#161618] min-h-full overflow-x-hidden text-[#fff]">
-    <section id="hero" class="relative min-h-screen">
-      <nav id="" class="fixed top-0 w-full bg-[#1e335d] z-10">
+    <section id="hero" class="relative min-h-screen w-full">
+      <nav id="" class="px-6 fixed top-0 w-full bg-[#1e335d] z-10">
         <div class="flex justify-between px-8">
           <div class="flex items-center space-x-12">
             <!-- logo -->
@@ -58,7 +58,7 @@
             </div>
           </div>
 
-          <div class="flex items-center space-x-6">
+          <div class="hidden lg:flex items-center space-x-6">
             <div>
               <img
                 src="../img/icons/magnifying-glass.png"
@@ -75,10 +75,53 @@
               >
             </div>
           </div>
+
+          <button
+            id="menu-btn"
+            class="block mt-10 hamburger lg:hidden focus:outline-none"
+          >
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </button>
+        </div>
+
+        <div class="lg:hidden">
+          <div
+            id="menu"
+            class="absolute flex-col items-center self-end hidden py-8 space-y-6 font-bold bg-[#1e335d] sm:w-auto sm:self-center left-0 right-0 drop-shadow-md"
+          >
+            <!-- <div class="w-full hover:bg-gray-500 hover:bg-opacity-40"><a href="#">Services</a></div> -->
+            <a
+              href="#"
+              class="block w-full text-center py-3 px-5 duration-150 transition-all hover:bg-opacity-40 hover:bg-white hover:text-[#0000cc]"
+              >Services</a
+            >
+            <a
+              href="#"
+              class="block w-full text-center py-3 px-5 duration-150 transition-all hover:bg-opacity-40 hover:bg-white hover:text-[#0000cc]"
+              >Solutions</a
+            >
+            <a
+              href="#"
+              class="block w-full text-center py-3 px-5 duration-150 transition-all hover:bg-opacity-40 hover:bg-white hover:text-[#0000cc]"
+              >About</a
+            >
+            <a
+              href="#"
+              class="block w-full text-center py-3 px-5 duration-150 transition-all hover:bg-opacity-40 hover:bg-white hover:text-[#0000cc]"
+              >Be A Partner</a
+            >
+            <a
+              href="#"
+              class="block w-full text-center py-3 px-5 duration-150 transition hover:bg-opacity-40 hover:bg-white hover:text-[#0000cc]"
+              >Login</a
+            >
+          </div>
         </div>
       </nav>
 
-      <div class="absolute top-24 left-[30px] lg:top-[250px] lg:left-[50px]">
+      <div class="absolute top-56 left-[30px] lg:top-[200px] lg:left-[50px]">
         <p class="text-6xl text-[#C6C6C6] font-lato">
           <span class="text-6xl border-b-2 text-[#C6C6C6] font-lato"
             >Learn</span
@@ -90,13 +133,15 @@
         </p>
 
         <div class="mt-6">
-          <div class="flex space-x-12">
+          <div class="flex items-center space-x-12">
             <button
-              class="text-[#fff] w-56 font-bold py-3 px-6 border-2 rounded-lg outline-none"
+              class="text-[#fff] w-56 h-20 font-bold py-3 px-6 border-2 rounded-lg outline-none"
             >
               See Detail
             </button>
-            <div class="flex items-center space-x-6">
+            <div
+              class="flex flex-col space-y-6 items-center lg:space-y-0 lg:flex-row lg:space-x-6"
+            >
               <div
                 class="flex items-center justify-center w-20 h-20 p-4 border-2 rounded-full"
               >
@@ -114,7 +159,7 @@
     </section>
 
     <section class="relative lg:py-10 lg:px-10 w-full">
-      <div class="w-full mt-40">
+      <div class="w-full mt-20">
         <div class="mt-10 grid grid-cols-2 gap-6 lg:grid-cols-4 lg:mt-16">
           <div class="flex flex-col items-center space-y-8">
             <div
@@ -151,7 +196,7 @@
         </div>
       </div>
 
-      <div class="ml-6 md:absolute md:-top-80 md:left-10 lg:-top-32">
+      <div class="mx-6 mr-12 md:absolute md:-top-80 lg:-top-32">
         <div
           class="sm:mt-16 flex flex-col space-y-4 md:space-y-0 md:flex-row md:space-x-8"
         >
@@ -179,7 +224,7 @@
               </p>
             </div>
           </div>
-          <div class="bg-[#fff] py-6 px-4 rounded-lg">
+          <div class="bg-[#fff] py-6 rounded-lg md:px-4">
             <div
               class="flex flex-col space-y-6 items-center lg:flex-row lg:space-y-0 lg:space-x-8"
             >
@@ -196,7 +241,7 @@
     </section>
 
     <section>
-      <div class="w-full m-8 lg:mt-8">
+      <div class="w-full m-8 mt-12">
         <div class="">
           <div
             class="flex flex-col space-y-8 lg:space-y-0 lg:flex-row lg:space-x-12"
@@ -653,5 +698,7 @@
         </div>
       </div>
     </section>
+
+    <script src="../js/script.js"></script>
   </body>
 </html>
