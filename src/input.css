@@ -14,12 +14,60 @@
   background-position: center;
   background-size: cover;
 }
-/* background: linear-gradient(
-  90deg,
-  rgba(2, 0, 36, 1) 0%,
-  rgba(74, 77, 80, 1) 100%,
-  rgba(0, 212, 255, 1) 100%
-); */
+
+/* unvisited link */
+.links a:link {
+  color: white;
+}
+
+/* mouse over link */
+.links a:hover {
+  color: #ffcd05;
+}
+
+/* selected link */
+.links a:focus {
+  border-bottom: 2px solid #ffcd05;
+}
+
+a#videoLibrary {
+  border-bottom: 2px solid #ffcd05;
+}
+
+#allVideos .banner {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(74, 77, 80, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+#videoLibraryBanner {
+  background-image: url(../img/bg.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1530px) {
+  #videoLibraryBanner {
+    background-image: url(../img/11.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #videoLibraryBanner {
+    background-image: url(../img/business-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
 
 /* Hamburger Menu */
 .hamburger {

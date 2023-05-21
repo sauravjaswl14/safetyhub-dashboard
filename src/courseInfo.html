@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <title>Course Information</title>
+  </head>
+  <body class="bg-[#f3f8f9]">
+    <main
+      class="flex flex-col space-y-6 lg:space-y-0 lg:flex-row max-w-screen min-h-screen"
+    >
+      <!-- left -->
+      <section class="flex flex-col space-y-4 md:space-y-0">
+        <div
+          class="flex mx-6 my-4 py-3 space-x-6 justify-center lg:justify-normal items-center bg-[#384F95] text-white font-bold rounded-lg whitespace-nowrap sm:px-36 md:px-64 lg:px-8 lg:hidden"
+        >
+          <!--   -->
+          <!--  -->
+          <!-- Hamburger Button -->
+          <div class="mt-2">
+            <button
+              id="menu-btn"
+              type="button"
+              class="z-40 block hamburger focus:outline-none"
+            >
+              <span class="hamburger-top"></span>
+              <span class="hamburger-middle"></span>
+              <span class="hamburger-bottom"></span>
+            </button>
+          </div>
+          <div>
+            <img src="../img/logo.svg" class="w-40" alt="" />
+          </div>
+        </div>
+        <div class="hidden lg:block">
+          <nav
+            class="w-16 p-4 bg-[#1e335d] h-full min-h-screen text-white lg:w-[250px] lg:p-8"
+          >
+            <div class="flex flex-col space-y-8">
+              <!-- logo -->
+              <div id="logo" class="">
+                <img
+                  src="../img/svg/safetyhub-logo-primary-mono-inverse.svg"
+                  class="hidden lg:block"
+                  alt=""
+                />
+                <img
+                  src="../img/logo.jpg"
+                  class="w-10 block lg:hidden"
+                  alt=""
+                />
+              </div>
+
+              <div
+                class="group flex items-center space-x-4 hover:cursor-pointer"
+              >
+                <div>
+                  <img src="../img/icons/monitor.png" class="w-8 h-8" alt="" />
+                </div>
+                <div class="hidden lg:flex-row lg:block">Dashboard</div>
+              </div>
+              <div class="flex items-center space-x-4 hover:cursor-pointer">
+                <div>
+                  <img
+                    src="../img/icons/videoLibrary.png"
+                    class="w-8 h-8"
+                    alt=""
+                  />
+                </div>
+                <div class="hidden lg:flex-row lg:block">Video Library</div>
+              </div>
+              <div class="flex items-center space-x-4 hover:cursor-pointer">
+                <div>
+                  <img
+                    src="../img/icons/training.png"
+                    class="w-10 h-10"
+                    alt=""
+                  />
+                </div>
+                <div class="hidden lg:flex-row lg:block">
+                  Training assigned to me
+                </div>
+              </div>
+              <div class="flex items-center space-x-4 hover:cursor-pointer">
+                <div>
+                  <img src="../img/icons/courses.png" class="w-8 h-8" alt="" />
+                </div>
+                <div class="hidden lg:flex-row lg:block">Courses</div>
+              </div>
+              <div class="flex items-center space-x-4 hover:cursor-pointer">
+                <div>
+                  <img src="../img/icons/Bundles.png" class="w-8 h-8" alt="" />
+                </div>
+                <div class="hidden lg:flex-row lg:block">Course Bundles</div>
+              </div>
+              <div class="flex items-center space-x-4 hover:cursor-pointer">
+                <div>
+                  <img src="../img/icons/user.png" class="w-8 h-8" alt="" />
+                </div>
+                <div class="hidden lg:flex-row lg:block">Enrolments</div>
+              </div>
+              <div class="flex items-center space-x-4 hover:cursor-pointer">
+                <div>
+                  <img
+                    src="../img/icons/participants.png"
+                    class="w-8 h-8"
+                    alt=""
+                  />
+                </div>
+                <div class="hidden lg:flex-row lg:block">Participants</div>
+              </div>
+              <div class="flex items-center space-x-4 hover:cursor-pointer">
+                <div>
+                  <img
+                    src="../img/icons/certificates.png"
+                    class="w-8 h-8"
+                    alt=""
+                  />
+                </div>
+                <div class="hidden lg:flex-row lg:block">Certificates</div>
+              </div>
+              <div class="flex items-center space-x-4 hover:cursor-pointer">
+                <div>
+                  <img
+                    src="../img/icons/Departments.png"
+                    class="w-8 h-8"
+                    alt=""
+                  />
+                </div>
+                <div class="hidden lg:flex-row lg:block">Departments</div>
+              </div>
+              <div class="flex items-center space-x-4 hover:cursor-pointer">
+                <div>
+                  <img src="../img/icons/groups.png" class="w-8 h-8" alt="" />
+                </div>
+                <div class="hidden lg:flex-row lg:block">Groups</div>
+              </div>
+              <div class="flex items-center space-x-4 hover:cursor-pointer">
+                <div>
+                  <img
+                    src="../img/icons/trainingReports.png"
+                    class="w-8 h-8"
+                    alt=""
+                  />
+                </div>
+                <div class="hidden lg:flex-row lg:block">Training reports</div>
+              </div>
+              <div class="flex items-center space-x-4 hover:cursor-pointer">
+                <div>
+                  <img
+                    src="../img/icons/participantsReports.png"
+                    class="w-8 h-8"
+                    alt=""
+                  />
+                </div>
+                <div class="hidden lg:flex-row lg:block">
+                  Participant reports
+                </div>
+              </div>
+              <div class="flex items-center space-x-4 hover:cursor-pointer">
+                <div>
+                  <img
+                    src="../img/icons/myUploadedVideos.png"
+                    class="w-8 h-8"
+                    alt=""
+                  />
+                </div>
+                <div class="hidden lg:flex-row lg:block">
+                  My uploaded videos
+                </div>
+              </div>
+              <div class="flex items-center space-x-4 hover:cursor-pointer">
+                <div>
+                  <img src="../img/icons/settings.png" class="w-8 h-8" alt="" />
+                </div>
+                <div class="hidden lg:flex-row lg:block">
+                  Organisation Settings
+                </div>
+              </div>
+              <div class="flex items-center space-x-4 hover:cursor-pointer">
+                <div>
+                  <img src="../img/icons/tasks.png" class="w-8 h-8" alt="" />
+                </div>
+                <div class="hidden lg:flex-row lg:block">Tasks</div>
+              </div>
+              <div class="flex items-center space-x-4 hover:cursor-pointer">
+                <div>
+                  <img
+                    src="../img/icons/organisations.png"
+                    class="w-8 h-8"
+                    alt=""
+                  />
+                </div>
+                <div class="hidden lg:flex-row lg:block">Organisations</div>
+              </div>
+              <div class="flex items-center space-x-4 hover:cursor-pointer">
+                <div>
+                  <img
+                    src="../img/icons/libraries.png"
+                    class="w-8 h-8"
+                    alt=""
+                  />
+                </div>
+                <div class="hidden lg:flex-row lg:block">Libraries</div>
+              </div>
+              <div class="flex items-center space-x-4 hover:cursor-pointer">
+                <div>
+                  <img src="../img/icons/plans.png" class="w-8 h-8" alt="" />
+                </div>
+                <div class="hidden lg:flex-row lg:block">Plans</div>
+              </div>
+              <div class="flex items-center space-x-4 hover:cursor-pointer">
+                <div>
+                  <img src="../img/icons/reports.png" class="w-8 h-8" alt="" />
+                </div>
+                <div class="hidden lg:flex-row lg:block">Reports</div>
+              </div>
+              <div class="flex items-center space-x-4 hover:cursor-pointer">
+                <div>
+                  <img
+                    src="../img/icons/settings (1).png"
+                    class="w-8 h-8"
+                    alt=""
+                  />
+                </div>
+                <div class="hidden lg:flex-row lg:block">Settings</div>
+              </div>
+              <div class="flex items-center space-x-4 hover:cursor-pointer">
+                <div>
+                  <img src="../img/icons/email.png" class="w-8 h-8" alt="" />
+                </div>
+                <div class="hidden lg:flex-row lg:block">Emails</div>
+              </div>
+              <div class="flex items-center space-x-4 hover:cursor-pointer">
+                <div>
+                  <img src="../img/icons/preview.png" class="w-8 h-8" alt="" />
+                </div>
+                <div class="hidden lg:flex-row lg:block">Preview</div>
+              </div>
+              <div class="flex items-center space-x-4 hover:cursor-pointer">
+                <div>
+                  <img src="../img/icons/theme.png" class="w-8 h-8" alt="" />
+                </div>
+                <div class="hidden lg:flex-row lg:block">Theme</div>
+              </div>
+              <div class="flex items-center space-x-4 hover:cursor-pointer">
+                <div>
+                  <img src="../img/icons/signout.png" class="w-8 h-8" alt="" />
+                </div>
+                <div class="hidden lg:flex-row lg:block">Signout</div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </section>
+
+      <!-- right -->
+      <section class="w-full">
+        <div class="p-6">
+          <h3 class="text-3xl mb-4 font-bold text-[#34495E]">
+            Alertes à la Bombe - Course Information
+          </h3>
+
+          <p class="text-lg mb-4 max-w-4xl text-[#374151]">
+            This is the description section. This text will be provided bt
+            Safetyhub once we know exactly what pages we need to create it for
+          </p>
+
+          <div class="my-8">
+            <div class="grid grid-cols-2 md:grid-cols-5">
+              <div
+                class="flex flex-col items-center space-y-4 border-b-4 border-[#ffcd05] p-4 md:flex-row md:space-y-0 md:space-x-4"
+              >
+                <img src="../img/icons/graduation.png" class="w-6 h-6" alt="" />
+                <p class="text-[#1E335D] font-semibold">Information</p>
+              </div>
+              <div
+                class="flex flex-col items-center p-4 space-y-4 md:flex-row md:space-y-0 md:space-x-4"
+              >
+                <img src="../img/icons/video.png" class="w-6 h-6" alt="" />
+                <p class="text-[#9ca3af] font-semibold">Content</p>
+              </div>
+              <div
+                class="flex flex-col items-center p-4 space-y-4 md:flex-row md:space-y-0 md:space-x-4"
+              >
+                <img src="../img/icons/clipboard.png" class="w-6 h-6" alt="" />
+                <p class="text-[#9ca3af] font-semibold">Completion</p>
+              </div>
+              <div
+                class="flex flex-col items-center p-4 space-y-4 md:flex-row md:space-y-0 md:space-x-4"
+              >
+                <img
+                  src="../img/icons/file-upload.png"
+                  class="w-6 h-6"
+                  alt=""
+                />
+                <p class="text-[#9ca3af] font-semibold">Publishing</p>
+              </div>
+              <div
+                class="flex flex-col items-center p-4 space-y-4 md:flex-row md:space-y-0 md:space-x-4"
+              >
+                <img src="../img/icons/add-user.png" class="w-6 h-6" alt="" />
+                <p class="text-[#9ca3af] font-semibold">Enrolments</p>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="mb-4 text-[#34495e] text-xl font-bold">
+            Course Information
+          </h3>
+          <div class="flex flex-col space-y-6 bg-white rounded-xl p-6 flex-1">
+            <div class="flex flex-col space-y-4">
+              <label for="title" class="text-[#878C9F] text-lg font-bold"
+                >Course Name</label
+              >
+              <div
+                class="flex items-center overflow-hidden space-x-4 p-3 bg-[#F9F9F9] border-2 rounded-lg"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112z"
+                  />
+                </svg>
+
+                <input
+                  type="text"
+                  placeholder="Name of the course"
+                  class="outline-none bg-[#F9F9F9] placeholder:max-w-sm placeholder:text-sm placeholder:text-[#4d4d4d] placeholder:font-medium"
+                />
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
+              <div class="flex flex-col space-y-4">
+                <label for="title" class="text-[#878C9F] text-lg font-bold"
+                  >Language</label
+                >
+                <div
+                  class="flex items-center overflow-hidden space-x-4 p-3 bg-[#F9F9F9] border-2 rounded-lg"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                    />
+                  </svg>
+
+                  <input
+                    type="text"
+                    placeholder="Select Language "
+                    class="outline-none bg-[#F9F9F9] placeholder:text-sm placeholder:text-[#4d4d4d] placeholder:font-medium"
+                  />
+                </div>
+              </div>
+
+              <div class="flex flex-col space-y-4">
+                <label for="title" class="text-[#878C9F] text-lg font-bold"
+                  >Department</label
+                >
+                <div
+                  class="flex items-center overflow-hidden space-x-4 p-3 bg-[#F9F9F9] border-2 rounded-lg"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15.75 5.25a3 3 0 013 3m3 0a6 6 0 01-7.029 5.912c-.563-.097-1.159.026-1.563.43L10.5 17.25H8.25v2.25H6v2.25H2.25v-2.818c0-.597.237-1.17.659-1.591l6.499-6.499c.404-.404.527-1 .43-1.563A6 6 0 1121.75 8.25z"
+                    />
+                  </svg>
+
+                  <input
+                    type="text"
+                    placeholder="Safetycare Pvt. Ltd. "
+                    class="outline-none bg-[#F9F9F9] placeholder:text-sm placeholder:text-[#4d4d4d] placeholder:font-medium"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white my-6 rounded-lg p-6 flex-1">
+            <div class="flex justify-between">
+              <p class="text-[#878C9F] mb-4 text-lg font-bold">
+                Course Summary
+              </p>
+
+              <div class="flex space-x-4 items-center">
+                <img
+                  src="../img/icons/attach-file.png"
+                  class="w-8 h-8"
+                  alt=""
+                />
+                <img src="../img/icons/edit.png" class="w-5 h-5" alt="" />
+              </div>
+            </div>
+            <textarea
+              class="bg-[#F9F9F9] rounded-sm py-6 px-4 w-full h-36 resize-none outline-none"
+            >
+            </textarea>
+          </div>
+
+          <div class="bg-white mb-6 rounded-lg p-6 flex-1">
+            <p class="text-[#878C9F] mb-4 text-lg font-bold">Thumbnails</p>
+            <div
+              class="flex flex-col space-y-4 justify-center items-center bg-[#F9F9F9] p-6"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5m-13.5-9L12 3m0 0l4.5 4.5M12 3v13.5"
+                />
+              </svg>
+
+              <p class="text-[#878C9F] text-center">
+                Select a new thumbnail to upload
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-white my-6 rounded-lg p-6 flex-1">
+            <div class="flex justify-between">
+              <p class="text-[#878C9F] mb-4 text-lg font-bold">
+                Facilitator's Guide
+              </p>
+
+              <div class="flex space-x-4 items-center">
+                <img
+                  src="../img/icons/attach-file.png"
+                  class="w-8 h-8"
+                  alt=""
+                />
+                <img src="../img/icons/edit.png" class="w-5 h-5" alt="" />
+              </div>
+            </div>
+            <textarea
+              class="bg-[#F9F9F9] rounded-sm py-6 px-4 w-full h-36 resize-none outline-none"
+            >
+            </textarea>
+          </div>
+
+          <div
+            class="flex flex-col space-y-4 mb-8 lg:flex-row lg:justify-between"
+          >
+            <div class="flex items-center space-x-4">
+              <img
+                src="../img/icons/toggle-button.png"
+                class="w-10 h-10"
+                alt=""
+              />
+              <p class="max-w-lg font-bold text-lg">
+                Make this video globally available
+              </p>
+            </div>
+
+            <!-- Buttons -->
+            <div class="">
+              <button
+                type="button"
+                class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+              >
+                Cancel
+              </button>
+
+              <button
+                type="button"
+                class="focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:focus:ring-yellow-900"
+              >
+                Update Video
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
