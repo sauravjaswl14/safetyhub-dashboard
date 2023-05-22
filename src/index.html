@@ -13,11 +13,10 @@
     <link rel="stylesheet" href="../css/main.css" />
     <title>Safety Hub</title>
   </head>
-  <body class="bg-[#161618] min-h-full overflow-x-hidden text-[#fff]">
-    <section id="hero" class="relative min-h-screen w-full">
-      <nav id="" class="px-6 pr-14 fixed top-0 w-full bg-[#1e335d] z-10">
-        <div class="flex justify-between px-12">
-          <div class="flex items-center space-x-12">
+  <body class="bg-[#161618] w-full min-h-full  text-[#fff]">
+      <nav id="" class="fixed top-0 w-full bg-[#1e335d] pr-16 pl-4 z-10 ">
+        <div class="flex items-center justify-between px-8 ">
+          
             <!-- logo -->
             <div>
               <img src="../img/logo1.svg" class="w-40 h-20" alt="" />
@@ -25,7 +24,7 @@
 
             <div class="hidden links lg:flex space-x-6">
               <a
-                href="#"
+                href="index.html"
                 id="active"
                 class="text-[#fff] font-semibold text-lg capitalize whitespace-nowrap max-w-lg"
               >
@@ -56,10 +55,19 @@
                 LMS Features
               </a>
             </div>
-          </div>
+          
+            <div class="flex items-center space-x-6 pr-8">
+              <a href="login.html" class=" text-lg text-white font-bold lg:hidden ">Login</a>
+
+              <button id="menu-btn" class="block mt-2 pr-6 hamburger lg:hidden focus:outline-none">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+              </button>
+            </div>
 
           <div class="hidden lg:flex items-center space-x-6">
-            <div>
+            <div class="lg:block">
               <img
                 src="../img/icons/magnifying-glass.png"
                 class="w-10 h-10"
@@ -76,14 +84,7 @@
             </div>
           </div>
 
-          <button
-            id="menu-btn"
-            class="block mt-10 hamburger lg:hidden focus:outline-none"
-          >
-            <span class="hamburger-top"></span>
-            <span class="hamburger-middle"></span>
-            <span class="hamburger-bottom"></span>
-          </button>
+         
         </div>
 
         <div class="lg:hidden">
@@ -208,15 +209,16 @@
               >Theme</a
             >
             <a
-              href="#"
+              href="login.html"
               class="block w-full text-center py-3 px-5 duration-150 transition hover:bg-opacity-40 hover:bg-white hover:text-[#0000cc]"
               >Signout</a
             >
           </div>
         </div>
       </nav>
+    <section id="hero" class="relative w-full min-h-screen ">
 
-      <div class="absolute top-56 left-[30px] lg:top-[200px] lg:left-[50px]">
+      <div class="absolute top-56 left-[30px] lg:top-[200px] lg:left-[100px]">
         <p class="text-6xl text-[#C6C6C6] font-lato">
           <span class="text-6xl border-b-2 text-[#C6C6C6] font-lato"
             >Learn</span
@@ -256,7 +258,7 @@
     <section class="relative lg:py-10 lg:px-10 w-full">
       <div class="w-full mt-20">
         <div
-          class="mt-10 grid grid-cols-2 gap-6 md:py-12 lg:grid-cols-4 lg:mt-16"
+          class="mt-10 p-4 ml-6 grid grid-cols-2 gap-6 md:py-12 lg:grid-cols-4 lg:mt-16"
         >
           <div class="flex flex-col items-center space-y-8">
             <div
@@ -294,9 +296,9 @@
         </div>
       </div>
 
-      <div class="m-8 md:absolute md:-top-80 lg:-top-32  ">
+      <div class=" mt-6 md:absolute md:-top-80 lg:-top-32  ">
         <div
-          class="flex flex-col space-y-4 md:flex-row space-x-8 sm:mt-16 md:space-y-0 ">
+          class="px-4 flex flex-col space-y-4 md:flex-row space-x-8 sm:mt-16 md:space-y-0 ">
           <div class="bg-[#fff] ml-8 py-6 px-4 rounded-lg"> 
             <div
               class="flex flex-col space-y-6 items-center lg:flex-row lg:space-y-0 lg:space-x-8"
@@ -343,7 +345,7 @@
           <div
             class="flex flex-col space-y-8 lg:space-y-0 lg:flex-row lg:space-x-12"
           >
-            <div class="w-[92%] lg:w-[60%]">
+            <div class="w-[90%] lg:w-[60%]">
               <img
                 src="../img/business.jpg"
                 class="w-full rounded-2xl lg:rounded-full"
@@ -356,14 +358,14 @@
           font-latopercase font-bold text-xl text-[#ffcd05]">
                   Our Introduction
                 </p>
-                <p class="text-5xl max-w-2xl text-[#FFF]">
+                <p class="text-xl md:text-5xl max-w-lg text-[#FFF]">
                   Let's make great things together
                 </p>
               </div>
 
               <div class="flex flex-col space-y-6">
                 <p
-                  class="max-w-sm text-[#C6C6C6] md:max-w-lg text-lg font-semibold"
+                  class="max-w-xs text-[#C6C6C6] md:max-w-lg text-lg font-semibold"
                 >
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Porro, omnis tempora. Est quia a ullam expedita doloribus,
@@ -371,7 +373,7 @@
                   aperiam, provident dolorem atque.
                 </p>
                 <p
-                  class="max-w-sm text-[#C6C6C6] md:max-w-lg text-lg font-semibold"
+                  class="max-w-xs text-[#C6C6C6] md:max-w-lg text-lg font-semibold"
                 >
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Porro, omnis tempora. Est quia a ullam expedita doloribus,
@@ -396,7 +398,7 @@
           class="ml-12 mb-6 lg:m-20 flex flex-col-reverse space-y-8 lg:space-y-0 lg:flex-row lg:space-x-10 lg:justify-between"
         >
           <div class="mt-6 flex flex-col space-y-8">
-            <h4 class="max-w-xl text-4xl font-bold text-white">
+            <h4 class="max-w-lg text-xl md:text-4xl font-bold text-white">
               The Prodigious eLearning Courses for you
               <hr class="w-28 h-1 bg-cyan-400" />
             </h4>
@@ -466,9 +468,9 @@
       </div>
     </section>
 
-    <section class="w-full mx-4 lg:pr-12">
+    <section class="w-full mx-4 p-4 lg:pr-12">
       <div>
-        <div class="flex space-x-6 items-center justify-between px-8">
+        <div class="flex space-x-6 items-center justify-between pl-7">
           <h4 class="text-lg md:text-2xl font-bold max-w-lg uppercase">
             Safetycare pvt ltd videos
           </h4>
@@ -605,7 +607,7 @@
         </div>
       </div>
       <div>
-        <div class="flex space-x-6 items-center justify-between px-8">
+        <div class="flex space-x-6 items-center justify-between pl-7">
           <h4 class="text-lg md:text-2xl font-bold max-w-lg uppercase">
             Behavioural Safety
           </h4>
@@ -744,7 +746,7 @@
       </div>
 
       <div>
-        <div class="flex space-x-6 items-center justify-between px-8">
+        <div class="flex space-x-6 items-center justify-between pl-7">
           <h4 class="text-lg md:text-2xl font-bold max-w-lg uppercase">
             Fire Awareness
           </h4>

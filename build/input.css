@@ -50,7 +50,7 @@ a#videoLibrary {
   border-bottom: 2px solid #ffcd05;
 }
 
-#allVideos .banner {
+/* #allVideos .banner {
   background: rgb(2, 0, 36);
   background: linear-gradient(
     90deg,
@@ -58,7 +58,7 @@ a#videoLibrary {
     rgba(74, 77, 80, 1) 100%,
     rgba(0, 212, 255, 1) 100%
   );
-}
+} */
 
 #videoLibraryBanner {
   background-image: url(../img/bg.jpg);
