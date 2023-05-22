@@ -19,13 +19,20 @@
     >
       <!-- left -->
       <section class="flex flex-col space-y-4 md:space-y-0">
-        <div
-          class="flex mx-6 my-4 py-3 px-6 space-x-6 justify-between items-center bg-[#384F95] text-white font-bold rounded-lg whitespace-nowrap lg:px-8 lg:hidden lg:justify-normal"
+        <!-- Hamburger -->
+        <nav
+          class="border-gray-200 bg-gray-50 dark:bg-gray-800 dark:border-gray-700 lg:hidden"
         >
-          <!--   -->
-          <!--  -->
-          <!-- Hamburger Button -->
-          <div class="mt-2">
+          <div
+            class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+          >
+            <a href="#" class="flex items-center">
+              <img
+                src="https://www.safetyhub.com/wp-content/uploads/2020/05/safetyhub-logo-primary-mono-inverse.svg"
+                class="h-8 mr-3"
+                id="logo"
+              />
+            </a>
             <button
               id="menu-btn"
               type="button"
@@ -36,17 +43,143 @@
               <span class="hamburger-bottom"></span>
             </button>
           </div>
-          <div>
-            <img src="../img/logo.svg" class="w-40" alt="" />
+          <div class="lg:hidden w-full">
+            <div
+              id="menu"
+              class="absolute flex-col items-center self-end hidden py-8 space-y-6 font-bold bg-[#1e335d] sm:w-auto sm:self-center left-0 right-0 drop-shadow-md z-40"
+            >
+              <a
+                href="#"
+                class="block w-full text-center py-3 px-5 duration-150 transition-all text-white hover:text-[#ffcd05]"
+                >Dashboard</a
+              >
+              <a
+                href="#"
+                class="block w-full text-center py-3 px-5 duration-150 transition-all text-white hover:text-[#ffcd05]"
+                >Video Library</a
+              >
+              <a
+                href="#"
+                class="block w-full text-center py-3 px-5 duration-150 transition-all text-white hover:text-[#ffcd05]"
+                >Training assigned to me</a
+              >
+              <a
+                href="#"
+                class="block w-full text-center py-3 px-5 duration-150 transition-all text-white hover:text-[#ffcd05]"
+                >Courses</a
+              >
+              <a
+                href="#"
+                class="block w-full text-center py-3 px-5 duration-150 transition text-white hover:text-[#ffcd05]"
+                >Course Bundels</a
+              >
+              <a
+                href="#"
+                class="block w-full text-center py-3 px-5 duration-150 transition text-white hover:text-[#ffcd05]"
+                >Enrolments</a
+              >
+              <a
+                href="#"
+                class="block w-full text-center py-3 px-5 duration-150 transition text-white hover:text-[#ffcd05]"
+                >Participants</a
+              >
+              <a
+                href="#"
+                class="block w-full text-center py-3 px-5 duration-150 transition text-white hover:text-[#ffcd05]"
+                >Certificates</a
+              >
+              <a
+                href="#"
+                class="block w-full text-center py-3 px-5 duration-150 transition text-white hover:text-[#ffcd05]"
+                >Departments</a
+              >
+              <a
+                href="#"
+                class="block w-full text-center py-3 px-5 duration-150 transition text-white hover:text-[#ffcd05]"
+                >Groups</a
+              >
+              <a
+                href="#"
+                class="block w-full text-center py-3 px-5 duration-150 transition text-white hover:text-[#ffcd05]"
+                >Training reports</a
+              >
+              <a
+                href="#"
+                class="block w-full text-center py-3 px-5 duration-150 transition text-white hover:text-[#ffcd05]"
+                >Participant reports</a
+              >
+              <a
+                href="#"
+                class="block w-full text-center py-3 px-5 duration-150 transition text-white hover:text-[#ffcd05]"
+                >My uploaded videos</a
+              >
+              <a
+                href="#"
+                class="block w-full text-center py-3 px-5 duration-150 transition text-white hover:text-[#ffcd05]"
+                >Organisation Settings</a
+              >
+              <a
+                href="#"
+                class="block w-full text-center py-3 px-5 duration-150 transition text-white hover:text-[#ffcd05]"
+                >Tasks</a
+              >
+              <a
+                href="#"
+                class="block w-full text-center py-3 px-5 duration-150 transition text-white hover:text-[#ffcd05]"
+                >Organisations</a
+              >
+              <a
+                href="#"
+                class="block w-full text-center py-3 px-5 duration-150 transition text-white hover:text-[#ffcd05]"
+                >Libraries</a
+              >
+              <a
+                href="#"
+                class="block w-full text-center py-3 px-5 duration-150 transition text-white hover:text-[#ffcd05]"
+                >Plans</a
+              >
+              <a
+                href="#"
+                class="block w-full text-center py-3 px-5 duration-150 transition text-white hover:text-[#ffcd05]"
+                >Reports</a
+              >
+              <a
+                href="#"
+                class="block w-full text-center py-3 px-5 duration-150 transition text-white hover:text-[#ffcd05]"
+                >Settings</a
+              >
+              <a
+                href="#"
+                class="block w-full text-center py-3 px-5 duration-150 transition text-white hover:text-[#ffcd05]"
+                >Emails</a
+              >
+              <a
+                href="#"
+                class="block w-full text-center py-3 px-5 duration-150 transition text-white hover:text-[#ffcd05]"
+                >Preview</a
+              >
+              <a
+                href="#"
+                class="block w-full text-center py-3 px-5 duration-150 transition text-white hover:text-[#ffcd05]"
+                >Theme</a
+              >
+              <a
+                href="#"
+                class="block w-full text-center py-3 px-5 duration-150 transition text-white hover:text-[#ffcd05]"
+                >Signout</a
+              >
+            </div>
           </div>
-        </div>
+        </nav>
+
+        <!-- dahboard menus -->
         <div class="hidden lg:block">
           <nav
             class="w-16 p-4 bg-[#1e335d] h-full min-h-screen text-white lg:w-[250px] lg:p-8"
           >
             <div class="flex flex-col space-y-8">
               <!-- logo -->
-              <div id="logo" class="">
+              <a href="index.html" id="logo" class="">
                 <img
                   src="../img/svg/safetyhub-logo-primary-mono-inverse.svg"
                   class="hidden lg:block"
@@ -57,7 +190,7 @@
                   class="w-10 block lg:hidden"
                   alt=""
                 />
-              </div>
+              </a>
 
               <div
                 class="group flex items-center space-x-4 hover:cursor-pointer"
@@ -65,10 +198,7 @@
                 <div>
                   <img src="../img/icons/monitor.png" class="w-8 h-8" alt="" />
                 </div>
-                <a
-                  href="dashboard.html"
-                  target="_blank"
-                  class="hidden lg:flex-row lg:block"
+                <a href="dashboard.html" class="hidden lg:flex-row lg:block"
                   >Dashboard</a
                 >
               </div>
@@ -80,10 +210,7 @@
                     alt=""
                   />
                 </div>
-                <a
-                  href="videoLibrary.html"
-                  target="_blank"
-                  class="hidden lg:flex-row lg:block"
+                <a href="videoLibrary.html" class="hidden lg:flex-row lg:block"
                   >Video Library</a
                 >
               </div>
@@ -95,11 +222,7 @@
                     alt=""
                   />
                 </div>
-                <a
-                  href="videoLibrary.html"
-                  target="_blank"
-                  class="hidden lg:flex-row lg:block"
-                >
+                <a href="videoLibrary.html" class="hidden lg:flex-row lg:block">
                   Training assigned to me
                 </a>
               </div>
@@ -107,10 +230,7 @@
                 <div>
                   <img src="../img/icons/courses.png" class="w-8 h-8" alt="" />
                 </div>
-                <a
-                  href="courses.html"
-                  target="_blank"
-                  class="hidden lg:flex-row lg:block"
+                <a href="courses.html" class="hidden lg:flex-row lg:block"
                   >Courses</a
                 >
               </div>
@@ -118,10 +238,7 @@
                 <div>
                   <img src="../img/icons/Bundles.png" class="w-8 h-8" alt="" />
                 </div>
-                <a
-                  href="courses.html"
-                  target="_blank"
-                  class="hidden lg:flex-row lg:block"
+                <a href="courses.html" class="hidden lg:flex-row lg:block"
                   >Course Bundles</a
                 >
               </div>
@@ -129,10 +246,7 @@
                 <div>
                   <img src="../img/icons/user.png" class="w-8 h-8" alt="" />
                 </div>
-                <a
-                  href="courses.html"
-                  target="_blank"
-                  class="hidden lg:flex-row lg:block"
+                <a href="courses.html" class="hidden lg:flex-row lg:block"
                   >Enrolments</a
                 >
               </div>
@@ -144,10 +258,7 @@
                     alt=""
                   />
                 </div>
-                <a
-                  href="courses.html"
-                  target="_blank"
-                  class="hidden lg:flex-row lg:block"
+                <a href="courses.html" class="hidden lg:flex-row lg:block"
                   >Participants</a
                 >
               </div>
@@ -159,10 +270,7 @@
                     alt=""
                   />
                 </div>
-                <a
-                  href="courses.html"
-                  target="_blank"
-                  class="hidden lg:flex-row lg:block"
+                <a href="courses.html" class="hidden lg:flex-row lg:block"
                   >Certificates</a
                 >
               </div>
@@ -174,10 +282,7 @@
                     alt=""
                   />
                 </div>
-                <a
-                  href="courses.html"
-                  target="_blank"
-                  class="hidden lg:flex-row lg:block"
+                <a href="courses.html" class="hidden lg:flex-row lg:block"
                   >Departments</a
                 >
               </div>
@@ -185,10 +290,7 @@
                 <div>
                   <img src="../img/icons/groups.png" class="w-8 h-8" alt="" />
                 </div>
-                <a
-                  href="courses.html"
-                  target="_blank"
-                  class="hidden lg:flex-row lg:block"
+                <a href="courses.html" class="hidden lg:flex-row lg:block"
                   >Groups</a
                 >
               </div>
@@ -200,10 +302,7 @@
                     alt=""
                   />
                 </div>
-                <a
-                  href="courses.html"
-                  target="_blank"
-                  class="hidden lg:flex-row lg:block"
+                <a href="courses.html" class="hidden lg:flex-row lg:block"
                   >Training reports</a
                 >
               </div>
@@ -215,11 +314,7 @@
                     alt=""
                   />
                 </div>
-                <a
-                  href="courses.html"
-                  target="_blank"
-                  class="hidden lg:flex-row lg:block"
-                >
+                <a href="courses.html" class="hidden lg:flex-row lg:block">
                   Participant reports
                 </a>
               </div>
@@ -233,7 +328,6 @@
                 </div>
                 <a
                   href="uploadedVideos.html"
-                  target="_blank"
                   class="hidden lg:flex-row lg:block"
                 >
                   My uploaded videos
@@ -243,11 +337,7 @@
                 <div>
                   <img src="../img/icons/settings.png" class="w-8 h-8" alt="" />
                 </div>
-                <a
-                  href="courses.html"
-                  target="_blank"
-                  class="hidden lg:flex-row lg:block"
-                >
+                <a href="courses.html" class="hidden lg:flex-row lg:block">
                   Organisation Settings
                 </a>
               </div>
@@ -255,10 +345,7 @@
                 <div>
                   <img src="../img/icons/tasks.png" class="w-8 h-8" alt="" />
                 </div>
-                <a
-                  href="courses.html"
-                  target="_blank"
-                  class="hidden lg:flex-row lg:block"
+                <a href="courses.html" class="hidden lg:flex-row lg:block"
                   >Tasks</a
                 >
               </div>
@@ -270,10 +357,7 @@
                     alt=""
                   />
                 </div>
-                <a
-                  href="courses.html"
-                  target="_blank"
-                  class="hidden lg:flex-row lg:block"
+                <a href="courses.html" class="hidden lg:flex-row lg:block"
                   >Organisations</a
                 >
               </div>
@@ -285,10 +369,7 @@
                     alt=""
                   />
                 </div>
-                <a
-                  href="courses.html"
-                  target="_blank"
-                  class="hidden lg:flex-row lg:block"
+                <a href="courses.html" class="hidden lg:flex-row lg:block"
                   >Libraries</a
                 >
               </div>
@@ -296,10 +377,7 @@
                 <div>
                   <img src="../img/icons/plans.png" class="w-8 h-8" alt="" />
                 </div>
-                <a
-                  href="courses.html"
-                  target="_blank"
-                  class="hidden lg:flex-row lg:block"
+                <a href="courses.html" class="hidden lg:flex-row lg:block"
                   >Plans</a
                 >
               </div>
@@ -307,10 +385,7 @@
                 <div>
                   <img src="../img/icons/reports.png" class="w-8 h-8" alt="" />
                 </div>
-                <a
-                  href="courses.html"
-                  target="_blank"
-                  class="hidden lg:flex-row lg:block"
+                <a href="courses.html" class="hidden lg:flex-row lg:block"
                   >Reports</a
                 >
               </div>
@@ -322,10 +397,7 @@
                     alt=""
                   />
                 </div>
-                <a
-                  href="courses.html"
-                  target="_blank"
-                  class="hidden lg:flex-row lg:block"
+                <a href="courses.html" class="hidden lg:flex-row lg:block"
                   >Settings</a
                 >
               </div>
@@ -333,10 +405,7 @@
                 <div>
                   <img src="../img/icons/email.png" class="w-8 h-8" alt="" />
                 </div>
-                <a
-                  href="courses.html"
-                  target="_blank"
-                  class="hidden lg:flex-row lg:block"
+                <a href="courses.html" class="hidden lg:flex-row lg:block"
                   >Emails</a
                 >
               </div>
@@ -344,10 +413,7 @@
                 <div>
                   <img src="../img/icons/preview.png" class="w-8 h-8" alt="" />
                 </div>
-                <a
-                  href="courses.html"
-                  target="_blank"
-                  class="hidden lg:flex-row lg:block"
+                <a href="courses.html" class="hidden lg:flex-row lg:block"
                   >Preview</a
                 >
               </div>
@@ -355,10 +421,7 @@
                 <div>
                   <img src="../img/icons/theme.png" class="w-8 h-8" alt="" />
                 </div>
-                <a
-                  href="courses.html"
-                  target="_blank"
-                  class="hidden lg:flex-row lg:block"
+                <a href="courses.html" class="hidden lg:flex-row lg:block"
                   >Theme</a
                 >
               </div>
@@ -366,14 +429,13 @@
                 <div>
                   <img src="../img/icons/signout.png" class="w-8 h-8" alt="" />
                 </div>
-                <a
-                  href="login.html"
-                  target="_blank"
-                  class="hidden lg:flex-row lg:block"
+                <a href="login.html" class="hidden lg:flex-row lg:block"
                   >Signout</a
                 >
               </div>
             </div>
+
+            <!-- Hamburger -->
           </nav>
         </div>
       </section>
@@ -397,14 +459,12 @@
               <div class="flex space-x-8">
                 <a
                   href="courseInfo.html"
-                  target="_blank"
                   class="flex items-center py-2 px-5 border-2 rounded-lg shadow-lg hover:scale-x-110 hover:cursor-pointer"
                 >
                   Duplicate
                 </a>
                 <a
                   href="courseInfo.html"
-                  target="_blank"
                   class="flex items-center py-2 px-5 bg-[#ffdd53] border-2 border-[#ffdd53] rounded-lg shadow-lg hover:scale-x-110 hover:cursor-pointer"
                 >
                   Create New Course
@@ -1003,5 +1063,7 @@
         <!--  -->
       </section>
     </main>
+
+    <script src="../js/script.js"></script>
   </body>
 </html>
