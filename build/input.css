@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#hero {
+  /* background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 78, 156, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  ); */
+  background-image: url(../img/bg2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.login {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 78, 156, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+/* unvisited link */
+.links a:link {
+  color: white;
+}
+
+/* mouse over link */
+.links a:hover {
+  color: #ffcd05;
+}
+
+/* selected link */
+.links a:focus {
+  border-bottom: 2px solid #ffcd05;
+}
+
+a#videoLibrary {
+  border-bottom: 2px solid #ffcd05;
+}
+
+#allVideos .banner {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(74, 77, 80, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+#videoLibraryBanner {
+  background-image: url(../img/bg.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1530px) {
+  #videoLibraryBanner {
+    background-image: url(../img/11.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #videoLibraryBanner {
+    background-image: url(../img/business-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+/* Hamburger Menu */
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  top: 0;
+  left: 0;
+  background: #fff;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}

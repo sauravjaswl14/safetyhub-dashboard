@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <title>All Videos</title>
+  </head>
+  <body class="bg-[#161618] min-h-full overflow-x-hidden text-[#fff]">
+    <nav id="" class="fixed top-0 w-full bg-[#1e335d] z-10">
+      <div class="hidden lg:flex px-4 lg:justify-between">
+        <div class="flex items-center space-x-20">
+          <!-- logo -->
+          <div>
+            <img src="../img/logo1.svg" class="w-40 h-20" alt="" />
+          </div>
+
+          <div class="hidden lg:flex lg:space-x-6">
+            <a
+              href="allVideos.html"
+              target="_blank"
+              class="text-[#fff] font-semibold text-lg capitalize whitespace-nowrap max-w-lg border-b-2 border-[#ffcd05]"
+            >
+              Training assigned to me
+            </a>
+            <a
+              href="#"
+              class="text-[#fff] pb-2 font-semibold text-lg capitalize whitespace-nowrap max-w-lg"
+            >
+              Video Library
+            </a>
+            <a
+              href="#"
+              class="text-[#fff] font-semibold text-lg capitalize whitespace-nowrap max-w-lg"
+            >
+              My Uploaded Videos
+            </a>
+            <a
+              href="#"
+              class="text-[#fff] font-semibold text-lg capitalize whitespace-nowrap max-w-lg"
+            >
+              Go to LMS
+            </a>
+          </div>
+        </div>
+
+        <div class="flex items-center space-x-6">
+          <div
+            class="group inline-block px-5 py-3 bg-[#ffcd05] rounded-lg hover:cursor-pointer"
+          >
+            <a href="#" class="text-[#1a73e8] font-bold group-hover:text-white"
+              >Sign Out</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Hamburger -->
+      <nav
+        class="border-gray-200 bg-gray-50 dark:bg-gray-800 dark:border-gray-700 lg:hidden"
+      >
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <a href="index.html" class="flex items-center">
+            <img
+              src="https://www.safetyhub.com/wp-content/uploads/2020/05/safetyhub-logo-primary-mono-inverse.svg"
+              class="h-8 mr-3"
+              id="logo"
+            />
+          </a>
+          <button
+            id="menu-btn"
+            type="button"
+            class="z-40 block hamburger focus:outline-none"
+          >
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </button>
+        </div>
+        <div class="lg:hidden w-full">
+          <div
+            id="menu"
+            class="absolute flex-col items-center self-end hidden py-8 space-y-6 font-bold bg-[#1e335d] sm:w-auto sm:self-center left-0 right-0 drop-shadow-md z-40"
+          >
+            <a
+              href="dashboard.html"
+              class="block w-full text-center py-3 px-5 duration-150 transition-all text-white hover:text-[#ffcd05]"
+              >Dashboard</a
+            >
+            <a
+              href="videoLibrary.html"
+              class="block w-full text-center py-3 px-5 duration-150 transition-all text-white hover:text-[#ffcd05]"
+              >Video Library</a
+            >
+            <a
+              href="videoLibrary.html"
+              class="block w-full text-center py-3 px-5 duration-150 transition-all text-white hover:text-[#ffcd05]"
+              >Training assigned to me</a
+            >
+            <a
+              href="courses.html"
+              class="block w-full text-center py-3 px-5 duration-150 transition-all text-white hover:text-[#ffcd05]"
+              >Courses</a
+            >
+            <a
+              href="courses.html"
+              class="block w-full text-center py-3 px-5 duration-150 transition text-white hover:text-[#ffcd05]"
+              >Course Bundels</a
+            >
+            <a
+              href="courses.html"
+              class="block w-full text-center py-3 px-5 duration-150 transition text-white hover:text-[#ffcd05]"
+              >Enrolments</a
+            >
+            <a
+              href="courses.html"
+              class="block w-full text-center py-3 px-5 duration-150 transition text-white hover:text-[#ffcd05]"
+              >Participants</a
+            >
+            <a
+              href="courses.html"
+              class="block w-full text-center py-3 px-5 duration-150 transition text-white hover:text-[#ffcd05]"
+              >Certificates</a
+            >
+            <a
+              href="courses.html"
+              class="block w-full text-center py-3 px-5 duration-150 transition text-white hover:text-[#ffcd05]"
+              >Departments</a
+            >
+            <a
+              href="courses.html"
+              class="block w-full text-center py-3 px-5 duration-150 transition text-white hover:text-[#ffcd05]"
+              >Groups</a
+            >
+            <a
+              href="courses.html"
+              class="block w-full text-center py-3 px-5 duration-150 transition text-white hover:text-[#ffcd05]"
+              >Training reports</a
+            >
+            <a
+              href="courses.html"
+              class="block w-full text-center py-3 px-5 duration-150 transition text-white hover:text-[#ffcd05]"
+              >Participant reports</a
+            >
+            <a
+              href="uploadedVideos.html"
+              class="block w-full text-center py-3 px-5 duration-150 transition text-white hover:text-[#ffcd05]"
+              >My uploaded videos</a
+            >
+            <a
+              href="courses.html"
+              class="block w-full text-center py-3 px-5 duration-150 transition text-white hover:text-[#ffcd05]"
+              >Organisation Settings</a
+            >
+            <a
+              href="#"
+              class="block w-full text-center py-3 px-5 duration-150 transition text-white hover:text-[#ffcd05]"
+              >Tasks</a
+            >
+            <a
+              href="#"
+              class="block w-full text-center py-3 px-5 duration-150 transition text-white hover:text-[#ffcd05]"
+              >Organisations</a
+            >
+            <a
+              href="#"
+              class="block w-full text-center py-3 px-5 duration-150 transition text-white hover:text-[#ffcd05]"
+              >Libraries</a
+            >
+            <a
+              href="#"
+              class="block w-full text-center py-3 px-5 duration-150 transition text-white hover:text-[#ffcd05]"
+              >Plans</a
+            >
+            <a
+              href="#"
+              class="block w-full text-center py-3 px-5 duration-150 transition text-white hover:text-[#ffcd05]"
+              >Reports</a
+            >
+            <a
+              href="#"
+              class="block w-full text-center py-3 px-5 duration-150 transition text-white hover:text-[#ffcd05]"
+              >Settings</a
+            >
+            <a
+              href="#"
+              class="block w-full text-center py-3 px-5 duration-150 transition text-white hover:text-[#ffcd05]"
+              >Emails</a
+            >
+            <a
+              href="#"
+              class="block w-full text-center py-3 px-5 duration-150 transition text-white hover:text-[#ffcd05]"
+              >Preview</a
+            >
+            <a
+              href="#"
+              class="block w-full text-center py-3 px-5 duration-150 transition text-white hover:text-[#ffcd05]"
+              >Theme</a
+            >
+            <a
+              href="#"
+              class="block w-full text-center py-3 px-5 duration-150 transition text-white hover:text-[#ffcd05]"
+              >Signout</a
+            >
+          </div>
+        </div>
+      </nav>
+    </nav>
+    <section
+      id="videoLibraryBanner"
+      class="w-full h-screen lg:h-[590px]"
+    ></section>
+
+    <section class="">
+      <div class="relative flex justify-center">
+        <div
+          class="absolute -mt-32 py-3 px-7 bg-[#18C1F0] mx-auto w-[350px] text-white text-center font-bold text-lg rounded-full"
+        >
+          Home / All Courses
+        </div>
+      </div>
+
+      <div class="-mt-24 bg-[#18C1F0] w-full min-h-screen">
+        <div class="p-8 flex flex-col space-y-6 items-center">
+          <h2 class="mt-8 text-4xl text-center">Safety Training Videos</h2>
+          <p class="max-w-2xl text-center text-lg">
+            A Safetyhub subscription gives you access to every one of the safety
+            training videos available on Safetyhub – so you can easily create a
+            comprehensive safety training program tailored to the exact needs of
+            your organisation.
+          </p>
+        </div>
+
+        <div
+          class="mt-10 lg:mt-6 mx-8 grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+        >
+          <div
+            class="group bg-[#FFF] p-8 flex flex-col items-center space-y-4 rounded-xl lg:space-y-0 lg:flex-row lg:space-x-6 hover:cursor-pointer"
+          >
+            <div
+              class="w-22 h-22 p-4 flex justify-center items-center rounded-full bg-[#60D3C6]"
+            >
+              <img src="../img/icons/graduation-cap.png" alt="" />
+            </div>
+            <div class="flex flex-col items-center space-y-4 lg:items-start">
+              <p
+                class="text-[#333333] font-bold text-lg group-hover:text-[#84CDF0]"
+              >
+                Learn From The Experts
+              </p>
+              <p class="text-[#848484] text-center max-w-lg lg:text-start">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusamus voluptatibus ea blanditiis nihil quos assumenda omnis
+                delectus vero officiis laudantium?
+              </p>
+            </div>
+          </div>
+          <div
+            class="group bg-[#FFF] p-8 flex flex-col items-center space-y-4 rounded-xl lg:space-y-0 lg:flex-row lg:space-x-6 hover:cursor-pointer"
+          >
+            <div
+              class="w-22 h-22 p-4 flex justify-center items-center rounded-full bg-[#FFA0A0]"
+            >
+              <img src="../img/icons/book.png" alt="" />
+            </div>
+            <div class="flex flex-col items-center space-y-4 lg:items-start">
+              <p
+                class="text-[#333333] font-bold text-lg group-hover:text-[#84CDF0]"
+              >
+                Book Library & Store
+              </p>
+              <p class="text-[#848484] text-center max-w-lg lg:text-start">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusamus voluptatibus ea blanditiis nihil quos assumenda omnis
+                delectus vero officiis laudantium?
+              </p>
+            </div>
+          </div>
+          <div
+            class="group bg-[#FFF] p-8 flex flex-col items-center space-y-4 rounded-xl lg:space-y-0 lg:flex-row lg:space-x-6 hover:cursor-pointer"
+          >
+            <div
+              class="w-22 h-22 p-4 flex justify-center items-center rounded-full bg-[#84CDF0]"
+            >
+              <img src="../img/icons/badge.png" alt="" />
+            </div>
+            <div class="flex flex-col items-center space-y-4 lg:items-start">
+              <p
+                class="text-[#333333] font-bold text-lg group-hover:text-[#84CDF0]"
+              >
+                Learn From The Experts
+              </p>
+              <p class="text-[#848484] text-center max-w-lg lg:text-start">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusamus voluptatibus ea blanditiis nihil quos assumenda omnis
+                delectus vero officiis laudantium?
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-14 flex justify-center">
+          <div
+            class="flex lg:w-1/3 pl-6 bg-white border-2 rounded-lg justify-between"
+          >
+            <input
+              type="text"
+              placeholder="What do you want to learn?"
+              class="pr-6 outline-none placeholder:text-sm placeholder:font-semibold"
+            />
+            <div
+              class="ml-6 bg-sky-600 p-4 border-2 border-skybg-sky-600 rounded-lg"
+            >
+              <img
+                src="../img/icons/magnifying-glass.png"
+                class="w-5 h-5"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="mt-16 flex justify-center">
+          <img src="../img/icons/down.png" class="animate-bounce" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="w-full mt-10">
+        <!--  -->
+        <div class="my-8">
+          <div class="mx-12 flex justify-between">
+            <div>
+              <h3 class="uppercase text-lg lg:text-xl font-bold">
+                Safetycare pvt ltd videos
+              </h3>
+            </div>
+
+            <a
+              href="allVideos.html"
+              target="_blank"
+              class="flex items-center py-2 px-4 whitespace-nowrap bg-[#3F9FFF]"
+              >More Videos</a
+            >
+          </div>
+          <div class="mt-6 flex items-center space-x-4">
+            <img src="../img/icons/left-arrow.png" class="w-8 h-8" alt="" />
+
+            <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+              <div class="flex flex-col">
+                <div class="">
+                  <img src="../img/2.jpg" class="w-full" alt="" />
+                </div>
+
+                <div
+                  class="bg-[#182031] p-6 flex flex-col items-center space-y-4 lg:items-start"
+                >
+                  <p class="text-lg font-semibold text-[#CECFD1]">
+                    Alertes à la Bombe
+                  </p>
+                  <div class="flex space-x-4 items-center">
+                    <p>58mins</p>
+                    <div class="w-2 h-2 rounded-full bg-white"></div>
+                    <p class="font-bold text-[#3F9FFF]">Healthcare</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col">
+                <div class="">
+                  <img src="../img/11.jpg" class="w-full" alt="" />
+                </div>
+
+                <div
+                  class="bg-[#182031] p-6 flex flex-col items-center space-y-4 lg:items-start"
+                >
+                  <p class="text-lg font-semibold text-[#CECFD1]">
+                    Analyse de la Sécurité des Tâches
+                  </p>
+                  <div class="flex space-x-4 items-center">
+                    <p>58mins</p>
+                    <div class="w-2 h-2 rounded-full bg-white"></div>
+                    <p class="font-bold text-[#3F9FFF]">Healthcare</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col">
+                <div class="">
+                  <img src="../img/10.jpg" class="w-full" alt="" />
+                </div>
+
+                <div
+                  class="bg-[#182031] p-6 flex flex-col items-center space-y-4 lg:items-start"
+                >
+                  <p class="text-lg font-semibold text-[#CECFD1]">
+                    Angle Grinder Safety
+                  </p>
+                  <div class="flex space-x-4 items-center">
+                    <p>58mins</p>
+                    <div class="w-2 h-2 rounded-full bg-white"></div>
+                    <p class="font-bold text-[#3F9FFF]">Healthcare</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col">
+                <div class="">
+                  <img src="../img/1.jpg" class="w-full" alt="" />
+                </div>
+
+                <div
+                  class="bg-[#182031] p-6 flex flex-col items-center space-y-4 lg:items-start"
+                >
+                  <p class="text-lg font-semibold text-[#CECFD1]">
+                    Pre-Operational Checks
+                  </p>
+                  <div class="flex space-x-4 items-center">
+                    <p>58mins</p>
+                    <div class="w-2 h-2 rounded-full bg-white"></div>
+                    <p class="font-bold text-[#3F9FFF]">Healthcare</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <img src="../img/icons/right-arrow.png" class="w-8 h-8" alt="" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="my-8">
+          <div class="mx-12 flex justify-between">
+            <div>
+              <h3 class="uppercase text-lg lg:text-xl font-bold">
+                COVID 19 MANAGEMENT
+              </h3>
+            </div>
+
+            <a
+              href="allVideos.html"
+              target="_blank"
+              class="flex items-center py-2 px-4 whitespace-nowrap bg-[#3F9FFF]"
+              >More Videos</a
+            >
+          </div>
+          <div class="mt-6 flex items-center space-x-4">
+            <img src="../img/icons/left-arrow.png" class="w-8 h-8" alt="" />
+
+            <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+              <div class="flex flex-col">
+                <div class="">
+                  <img src="../img/2.jpg" class="w-full" alt="" />
+                </div>
+
+                <div
+                  class="bg-[#182031] p-6 flex flex-col items-center space-y-4 lg:items-start"
+                >
+                  <p class="text-lg font-semibold text-[#CECFD1]">
+                    Coronavirus - How is it spread?
+                  </p>
+                  <div class="flex space-x-4 items-center">
+                    <p>58mins</p>
+                    <div class="w-2 h-2 rounded-full bg-white"></div>
+                    <p class="font-bold text-[#3F9FFF]">Covid</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col">
+                <div class="">
+                  <img src="../img/11.jpg" class="w-full" alt="" />
+                </div>
+
+                <div
+                  class="bg-[#182031] p-6 flex flex-col items-center space-y-4 lg:items-start"
+                >
+                  <p class="text-lg font-semibold text-[#CECFD1]">
+                    Covid-19 prevention
+                  </p>
+                  <div class="flex space-x-4 items-center">
+                    <p>58mins</p>
+                    <div class="w-2 h-2 rounded-full bg-white"></div>
+                    <p class="font-bold text-[#3F9FFF]">Covid</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col">
+                <div class="">
+                  <img src="../img/10.jpg" class="w-full" alt="" />
+                </div>
+
+                <div
+                  class="bg-[#182031] p-6 flex flex-col items-center space-y-4 lg:items-start"
+                >
+                  <p class="text-lg font-semibold text-[#CECFD1]">
+                    Coronavirus Control Measures
+                  </p>
+                  <div class="flex space-x-4 items-center">
+                    <p>58mins</p>
+                    <div class="w-2 h-2 rounded-full bg-white"></div>
+                    <p class="font-bold text-[#3F9FFF]">Covid</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col">
+                <div class="">
+                  <img src="../img/1.jpg" class="w-full" alt="" />
+                </div>
+
+                <div
+                  class="bg-[#182031] p-6 flex flex-col items-center space-y-4 lg:items-start"
+                >
+                  <p class="text-lg font-semibold text-[#CECFD1]">
+                    Face Masks Basics
+                  </p>
+                  <div class="flex space-x-4 items-center">
+                    <p>58mins</p>
+                    <div class="w-2 h-2 rounded-full bg-white"></div>
+                    <p class="font-bold text-[#3F9FFF]">Covid</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <img src="../img/icons/right-arrow.png" class="w-8 h-8" alt="" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="my-8">
+          <div class="mx-12 flex justify-between">
+            <div>
+              <h3 class="uppercase text-lg lg:text-xl font-bold">
+                Behavioural Safety
+              </h3>
+            </div>
+
+            <a
+              href="allVideos.html"
+              target="_blank"
+              class="flex items-center py-2 px-4 whitespace-nowrap bg-[#3F9FFF]"
+              >More Videos</a
+            >
+          </div>
+          <div class="mt-6 flex items-center space-x-4">
+            <img src="../img/icons/left-arrow.png" class="w-8 h-8" alt="" />
+
+            <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+              <div class="flex flex-col">
+                <div class="">
+                  <img src="../img/2.jpg" class="w-full" alt="" />
+                </div>
+
+                <div
+                  class="bg-[#182031] p-6 flex flex-col items-center space-y-4 lg:items-start"
+                >
+                  <p class="text-lg font-semibold text-[#CECFD1]">
+                    Behavioural Safety
+                  </p>
+                  <div class="flex space-x-4 items-center">
+                    <p>58mins</p>
+                    <div class="w-2 h-2 rounded-full bg-white"></div>
+                    <p class="font-bold text-[#3F9FFF]">Behaviour</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col">
+                <div class="">
+                  <img src="../img/11.jpg" class="w-full" alt="" />
+                </div>
+
+                <div
+                  class="bg-[#182031] p-6 flex flex-col items-center space-y-4 lg:items-start"
+                >
+                  <p class="text-lg font-semibold text-[#CECFD1]">
+                    Bullying in Workplace
+                  </p>
+                  <div class="flex space-x-4 items-center">
+                    <p>58mins</p>
+                    <div class="w-2 h-2 rounded-full bg-white"></div>
+                    <p class="font-bold text-[#3F9FFF]">Behaviour</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col">
+                <div class="">
+                  <img src="../img/10.jpg" class="w-full" alt="" />
+                </div>
+
+                <div
+                  class="bg-[#182031] p-6 flex flex-col items-center space-y-4 lg:items-start"
+                >
+                  <p class="text-lg font-semibold text-[#CECFD1]">
+                    Drugs and Alcohol at work
+                  </p>
+                  <div class="flex space-x-4 items-center">
+                    <p>58mins</p>
+                    <div class="w-2 h-2 rounded-full bg-white"></div>
+                    <p class="font-bold text-[#3F9FFF]">Behaviour</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col">
+                <div class="">
+                  <img src="../img/1.jpg" class="w-full" alt="" />
+                </div>
+
+                <div
+                  class="bg-[#182031] p-6 flex flex-col items-center space-y-4 lg:items-start"
+                >
+                  <p class="text-lg font-semibold text-[#CECFD1]">
+                    Human Factor
+                  </p>
+                  <div class="flex space-x-4 items-center">
+                    <p>58mins</p>
+                    <div class="w-2 h-2 rounded-full bg-white"></div>
+                    <p class="font-bold text-[#3F9FFF]">Behaviour</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <img src="../img/icons/right-arrow.png" class="w-8 h-8" alt="" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="my-8">
+          <div class="mx-12 flex items-center justify-between">
+            <div>
+              <h3 class="uppercase text-lg lg:text-xl font-bold">Falls</h3>
+            </div>
+
+            <a
+              href="allVideos.html"
+              target="_blank"
+              class="flex items-center py-2 px-4 whitespace-nowrap bg-[#3F9FFF]"
+              >More Videos</a
+            >
+          </div>
+          <div class="mt-6 flex items-center space-x-4">
+            <img src="../img/icons/left-arrow.png" class="w-8 h-8" alt="" />
+
+            <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+              <div class="flex flex-col">
+                <div class="">
+                  <img src="../img/2.jpg" class="w-full" alt="" />
+                </div>
+
+                <div
+                  class="bg-[#182031] p-6 flex flex-col items-center space-y-4 lg:items-start"
+                >
+                  <p class="text-lg font-semibold text-[#CECFD1]">
+                    Elevating Work Platforms
+                  </p>
+                  <div class="flex space-x-4 items-center">
+                    <p>58mins</p>
+                    <div class="w-2 h-2 rounded-full bg-white"></div>
+                    <p class="font-bold text-[#3F9FFF]">Safety</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col">
+                <div class="">
+                  <img src="../img/11.jpg" class="w-full" alt="" />
+                </div>
+
+                <div
+                  class="bg-[#182031] p-6 flex flex-col items-center space-y-4 lg:items-start"
+                >
+                  <p class="text-lg font-semibold text-[#CECFD1]">
+                    EWP-General Guidelines
+                  </p>
+                  <div class="flex space-x-4 items-center">
+                    <p>58mins</p>
+                    <div class="w-2 h-2 rounded-full bg-white"></div>
+                    <p class="font-bold text-[#3F9FFF]">Safety</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col">
+                <div class="">
+                  <img src="../img/10.jpg" class="w-full" alt="" />
+                </div>
+
+                <div
+                  class="bg-[#182031] p-6 flex flex-col items-center space-y-4 lg:items-start"
+                >
+                  <p class="text-lg font-semibold text-[#CECFD1]">
+                    EWP-Pre-Operational Checks
+                  </p>
+                  <div class="flex space-x-4 items-center">
+                    <p>58mins</p>
+                    <div class="w-2 h-2 rounded-full bg-white"></div>
+                    <p class="font-bold text-[#3F9FFF]">Safety</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col">
+                <div class="">
+                  <img src="../img/1.jpg" class="w-full" alt="" />
+                </div>
+
+                <div
+                  class="bg-[#182031] p-6 flex flex-col items-center space-y-4 lg:items-start"
+                >
+                  <p class="text-lg font-semibold text-[#CECFD1]">
+                    Falls in the Workplace
+                  </p>
+                  <div class="flex space-x-4 items-center">
+                    <p>58mins</p>
+                    <div class="w-2 h-2 rounded-full bg-white"></div>
+                    <p class="font-bold text-[#3F9FFF]">Safety</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <img src="../img/icons/right-arrow.png" class="w-8 h-8" alt="" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="my-8">
+          <div class="mx-12 flex items-center justify-between">
+            <div>
+              <h3 class="uppercase text-lg lg:text-xl font-bold">
+                Fire Awareness
+              </h3>
+            </div>
+
+            <a
+              href="allVideos.html"
+              target="_blank"
+              class="flex items-center py-2 px-4 whitespace-nowrap bg-[#3F9FFF]"
+              >More Videos</a
+            >
+          </div>
+          <div class="mt-6 flex items-center space-x-4">
+            <img src="../img/icons/left-arrow.png" class="w-8 h-8" alt="" />
+
+            <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+              <div class="flex flex-col">
+                <div class="">
+                  <img src="../img/2.jpg" class="w-full" alt="" />
+                </div>
+
+                <div
+                  class="bg-[#182031] p-6 flex flex-col items-center space-y-4 lg:items-start"
+                >
+                  <p class="text-lg font-semibold text-[#CECFD1]">
+                    Bomb Threats
+                  </p>
+                  <div class="flex space-x-4 items-center">
+                    <p>58mins</p>
+                    <div class="w-2 h-2 rounded-full bg-white"></div>
+                    <p class="font-bold text-[#3F9FFF]">Awareness</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col">
+                <div class="">
+                  <img src="../img/11.jpg" class="w-full" alt="" />
+                </div>
+
+                <div
+                  class="bg-[#182031] p-6 flex flex-col items-center space-y-4 lg:items-start"
+                >
+                  <p class="text-lg font-semibold text-[#CECFD1]">
+                    Building and office Evacuation
+                  </p>
+                  <div class="flex space-x-4 items-center">
+                    <p>58mins</p>
+                    <div class="w-2 h-2 rounded-full bg-white"></div>
+                    <p class="font-bold text-[#3F9FFF]">Awareness</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col">
+                <div class="">
+                  <img src="../img/10.jpg" class="w-full" alt="" />
+                </div>
+
+                <div
+                  class="bg-[#182031] p-6 flex flex-col items-center space-y-4 lg:items-start"
+                >
+                  <p class="text-lg font-semibold text-[#CECFD1]">Burns</p>
+                  <div class="flex space-x-4 items-center">
+                    <p>58mins</p>
+                    <div class="w-2 h-2 rounded-full bg-white"></div>
+                    <p class="font-bold text-[#3F9FFF]">Awareness</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col">
+                <div class="">
+                  <img src="../img/1.jpg" class="w-full" alt="" />
+                </div>
+
+                <div
+                  class="bg-[#182031] p-6 flex flex-col items-center space-y-4 lg:items-start"
+                >
+                  <p class="text-lg font-semibold text-[#CECFD1]">
+                    Fire-Facts and Prevention
+                  </p>
+                  <div class="flex space-x-4 items-center">
+                    <p>58mins</p>
+                    <div class="w-2 h-2 rounded-full bg-white"></div>
+                    <p class="font-bold text-[#3F9FFF]">Awareness</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <img src="../img/icons/right-arrow.png" class="w-8 h-8" alt="" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="my-8">
+          <div class="mx-12 flex items-center justify-between">
+            <div>
+              <h3 class="uppercase text-lg lg:text-xl font-bold">
+                First Aid And Welfare
+              </h3>
+            </div>
+
+            <a
+              href="allVideos.html"
+              target="_blank"
+              class="flex items-center py-2 px-4 whitespace-nowrap bg-[#3F9FFF]"
+              >More Videos</a
+            >
+          </div>
+          <div class="mt-6 flex items-center space-x-4">
+            <img src="../img/icons/left-arrow.png" class="w-8 h-8" alt="" />
+
+            <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+              <div class="flex flex-col">
+                <div class="">
+                  <img src="../img/2.jpg" class="w-full" alt="" />
+                </div>
+
+                <div
+                  class="bg-[#182031] p-6 flex flex-col items-center space-y-4 lg:items-start"
+                >
+                  <p class="text-lg font-semibold text-[#CECFD1]">
+                    Bloodborne Pathogens- Managing the Risk
+                  </p>
+                  <div class="flex space-x-4 items-center">
+                    <p>58mins</p>
+                    <div class="w-2 h-2 rounded-full bg-white"></div>
+                    <p class="font-bold text-[#3F9FFF]">First Aid</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col">
+                <div class="">
+                  <img src="../img/11.jpg" class="w-full" alt="" />
+                </div>
+
+                <div
+                  class="bg-[#182031] p-6 flex flex-col items-center space-y-4 lg:items-start"
+                >
+                  <p class="text-lg font-semibold text-[#CECFD1]">
+                    CPR- Cardiopulmanary Resuscitation
+                  </p>
+                  <div class="flex space-x-4 items-center">
+                    <p>58mins</p>
+                    <div class="w-2 h-2 rounded-full bg-white"></div>
+                    <p class="font-bold text-[#3F9FFF]">First Aid</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col">
+                <div class="">
+                  <img src="../img/10.jpg" class="w-full" alt="" />
+                </div>
+
+                <div
+                  class="bg-[#182031] p-6 flex flex-col items-center space-y-4 lg:items-start"
+                >
+                  <p class="text-lg font-semibold text-[#CECFD1]">
+                    Cuts and Bleeding
+                  </p>
+                  <div class="flex space-x-4 items-center">
+                    <p>58mins</p>
+                    <div class="w-2 h-2 rounded-full bg-white"></div>
+                    <p class="font-bold text-[#3F9FFF]">First Aid</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col">
+                <div class="">
+                  <img src="../img/1.jpg" class="w-full" alt="" />
+                </div>
+
+                <div
+                  class="bg-[#182031] p-6 flex flex-col items-center space-y-4 lg:items-start"
+                >
+                  <p class="text-lg font-semibold text-[#CECFD1]">
+                    First Aid for Burns
+                  </p>
+                  <div class="flex space-x-4 items-center">
+                    <p>58mins</p>
+                    <div class="w-2 h-2 rounded-full bg-white"></div>
+                    <p class="font-bold text-[#3F9FFF]">First Aid</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <img src="../img/icons/right-arrow.png" class="w-8 h-8" alt="" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="my-8">
+          <div class="mx-12 flex items-center justify-between">
+            <div>
+              <h3 class="uppercase text-lg lg:text-xl font-bold">
+                Forklifts and Cranes
+              </h3>
+            </div>
+
+            <a
+              href="allVideos.html"
+              target="_blank"
+              class="flex items-center py-2 px-4 whitespace-nowrap bg-[#3F9FFF]"
+              >More Videos</a
+            >
+          </div>
+          <div class="mt-6 flex items-center space-x-4">
+            <img src="../img/icons/left-arrow.png" class="w-8 h-8" alt="" />
+
+            <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+              <div class="flex flex-col">
+                <div class="">
+                  <img src="../img/2.jpg" class="w-full" alt="" />
+                </div>
+
+                <div
+                  class="bg-[#182031] p-6 flex flex-col items-center space-y-4 lg:items-start"
+                >
+                  <p class="text-lg font-semibold text-[#CECFD1]">
+                    Chain of Responsibility
+                  </p>
+                  <div class="flex space-x-4 items-center">
+                    <p>58mins</p>
+                    <div class="w-2 h-2 rounded-full bg-white"></div>
+                    <p class="font-bold text-[#3F9FFF]">Precaution</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col">
+                <div class="">
+                  <img src="../img/11.jpg" class="w-full" alt="" />
+                </div>
+
+                <div
+                  class="bg-[#182031] p-6 flex flex-col items-center space-y-4 lg:items-start"
+                >
+                  <p class="text-lg font-semibold text-[#CECFD1]">
+                    Elevating Work Platforms
+                  </p>
+                  <div class="flex space-x-4 items-center">
+                    <p>58mins</p>
+                    <div class="w-2 h-2 rounded-full bg-white"></div>
+                    <p class="font-bold text-[#3F9FFF]">Precaution</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col">
+                <div class="">
+                  <img src="../img/10.jpg" class="w-full" alt="" />
+                </div>
+
+                <div
+                  class="bg-[#182031] p-6 flex flex-col items-center space-y-4 lg:items-start"
+                >
+                  <p class="text-lg font-semibold text-[#CECFD1]">
+                    EWP-General Guidelines
+                  </p>
+                  <div class="flex space-x-4 items-center">
+                    <p>58mins</p>
+                    <div class="w-2 h-2 rounded-full bg-white"></div>
+                    <p class="font-bold text-[#3F9FFF]">Precaution</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col">
+                <div class="">
+                  <img src="../img/1.jpg" class="w-full" alt="" />
+                </div>
+
+                <div
+                  class="bg-[#182031] p-6 flex flex-col items-center space-y-4 lg:items-start"
+                >
+                  <p class="text-lg font-semibold text-[#CECFD1]">
+                    EWP - Operational Checks
+                  </p>
+                  <div class="flex space-x-4 items-center">
+                    <p>58mins</p>
+                    <div class="w-2 h-2 rounded-full bg-white"></div>
+                    <p class="font-bold text-[#3F9FFF]">Precaution</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <img src="../img/icons/right-arrow.png" class="w-8 h-8" alt="" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="my-8">
+          <div class="mx-12 flex items-center justify-between">
+            <div>
+              <h3 class="uppercase text-lg lg:text-xl font-bold">
+                Hand and Power Tools
+              </h3>
+            </div>
+
+            <a
+              href="allVideos.html"
+              target="_blank"
+              class="flex items-center py-2 px-4 whitespace-nowrap bg-[#3F9FFF]"
+              >More Videos</a
+            >
+          </div>
+          <div class="mt-6 flex items-center space-x-4">
+            <img src="../img/icons/left-arrow.png" class="w-8 h-8" alt="" />
+
+            <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+              <div class="flex flex-col">
+                <div class="">
+                  <img src="../img/2.jpg" class="w-full" alt="" />
+                </div>
+
+                <div
+                  class="bg-[#182031] p-6 flex flex-col items-center space-y-4 lg:items-start"
+                >
+                  <p class="text-lg font-semibold text-[#CECFD1]">
+                    Angle Grinder Safety
+                  </p>
+                  <div class="flex space-x-4 items-center">
+                    <p>58mins</p>
+                    <div class="w-2 h-2 rounded-full bg-white"></div>
+                    <p class="font-bold text-[#3F9FFF]">Tools</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col">
+                <div class="">
+                  <img src="../img/11.jpg" class="w-full" alt="" />
+                </div>
+
+                <div
+                  class="bg-[#182031] p-6 flex flex-col items-center space-y-4 lg:items-start"
+                >
+                  <p class="text-lg font-semibold text-[#CECFD1]">
+                    Pre Operational Checks
+                  </p>
+                  <div class="flex space-x-4 items-center">
+                    <p>58mins</p>
+                    <div class="w-2 h-2 rounded-full bg-white"></div>
+                    <p class="font-bold text-[#3F9FFF]">Tools</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col">
+                <div class="">
+                  <img src="../img/10.jpg" class="w-full" alt="" />
+                </div>
+
+                <div
+                  class="bg-[#182031] p-6 flex flex-col items-center space-y-4 lg:items-start"
+                >
+                  <p class="text-lg font-semibold text-[#CECFD1]">
+                    Chainsaw Maintenance and Safety
+                  </p>
+                  <div class="flex space-x-4 items-center">
+                    <p>58mins</p>
+                    <div class="w-2 h-2 rounded-full bg-white"></div>
+                    <p class="font-bold text-[#3F9FFF]">Tools</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col">
+                <div class="">
+                  <img src="../img/1.jpg" class="w-full" alt="" />
+                </div>
+
+                <div
+                  class="bg-[#182031] p-6 flex flex-col items-center space-y-4 lg:items-start"
+                >
+                  <p class="text-lg font-semibold text-[#CECFD1]">
+                    Circular Saw Basics
+                  </p>
+                  <div class="flex space-x-4 items-center">
+                    <p>58mins</p>
+                    <div class="w-2 h-2 rounded-full bg-white"></div>
+                    <p class="font-bold text-[#3F9FFF]">Tools</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <img src="../img/icons/right-arrow.png" class="w-8 h-8" alt="" />
+          </div>
+        </div>
+        <!--  -->
+      </div>
+    </section>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>
